@@ -1,0 +1,24 @@
+package Exception;
+
+public class Exception {
+
+	public static void main(String[] args) {
+		/*
+	Java Exception --  Description
+	
+ArithmeticException -- Arithmetic error (divide-by-zero).
+ArrayIndexOutOfBoundsException -- Array index is out-of-bounds.
+IllegalArgumentException -- Illegal argument used to call a method.
+IllegalThreadStateException -- Requested operation not compatible with current thread state.
+IndexOutOfBoundsException -- Some type of index is out-of-bounds.
+NullPointerException -- Invalid use of a null reference.
+NumberFormatException -- Invalid conversion of a string to a numeric format.
+StringIndexOutOfBoundsException -- Attempt to index outside the bounds of a string.
+TypeNotPresentException -- Type not found.
+
+		 */
+
+		
+	}
+
+}

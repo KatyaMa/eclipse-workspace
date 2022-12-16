@@ -1,0 +1,26 @@
+package Java_Files_and_Java_IO;
+import java.io.*;
+
+public class NullPointerExceptions {
+
+	public static void main(String[] args) {
+
+
+		 // Initializing String variable with null value
+        String ptr = null;
+
+        try
+        {
+
+            if (ptr.equals("gfg"))
+                System.out.print("Same");
+            else
+                System.out.print("Not Same");
+        }
+        catch(NullPointerExceptions e)
+        {
+            System.out.print("NullPointerException Caught");
+        }
+	}
+
+}

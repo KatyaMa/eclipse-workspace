@@ -1,0 +1,94 @@
+package miniHackathon;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
+public class miniHackathon {
+
+	public static void main(String[] args) {
+		
+		miniHackathon m = new miniHackathon();
+    	m.loadVendorData();
+    	
+    	
+    	
+    	// Our requirements are:
+        // Create  Customer objects, populate them  and utilize one of the
+        // Java collection class data structures ( ArrayList or LinkedList for example) to
+        // hold the Customer objects then
+    	
+       // Customer customer = new Customer(LastName, LastName, LastName, LastName, LastName, LastName, LastName, LastName, LastName, LastName, LastName, LastName);
+    	//for (customer : C    
+    	}
+	
+    // this is what the vendor (Crufty-Clunky code Inc) has provided
+    // loadVendorData() method as a starting point.
+    //
+    // here are the fields required for a Customer Object:
+    //
+    //"first_name",
+    //"last_name",
+    //"company_name",
+    //"address",
+    //"city",
+    //"county",
+    //"state",
+    //"zip",
+    //"phone1",
+    //"phone2",
+    //"email",
+    //"web"
+    //
+    // Our requirements are:
+    // Create  Customer objects, populate them  and utilize one of the
+    // Java collection class data structures ( ArrayList or LinkedList for example) to
+    // hold the Customer objects then
+    //
+    
+	
+    // Place Order (Customer)
+    //  2.The system displays the customer's information: name, street, city, zip, phone, email.
+    //    given input will be last_name.
+    void loadVendorData()
+    {	
+       // please map this file to your drive
+       String file = "/Users/katya/Python/Eclips-Perscholas/us-500.csv";
+       String line;
+       List<List<String>> customers = new ArrayList<>();
+       
+       // provide a simple lookup (use Scanner obj) as stated in this part of the BRD,
+       // that will take a Last_name as input.
+   	Scanner obj = new Scanner(System.in);
+   	System.out.println("Enter a Last Name: ");
+   	String LastName  = obj.nextLine();
+   	System.out.println("Last name: " + LastName);
+   	
+   	
+       try (BufferedReader br =
+            new BufferedReader(new FileReader(file))) {
+            while((line = br.readLine()) != null){
+            	// System.out.println(line);
+            	String[] Customer = line.split(",");
+            	customers.add(Arrays.asList(Customer));
+            	 // System.out.println(Arrays.asList(Customer).get(1));
+            	if (("\"" + LastName +"\"").equals(Arrays.asList(Customer).get(1))) {
+             	   System.out.println(Arrays.asList(Customer));
+            }}
+        } catch (Exception e){
+            System.out.println(e);
+        }
+       
+        for (int s = 0; s < customers.size(); s++) {
+        	
+          if (customers.get(s).get(1).equals("\"" + LastName +"\"" ))  System.out.println(customers.get(s));     
+       
+        
+    		   
+        } // System.out.println(customers.get(1).get(1));
+	}
+
+}

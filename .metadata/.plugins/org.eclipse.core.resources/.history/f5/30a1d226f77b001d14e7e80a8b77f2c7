@@ -1,0 +1,29 @@
+package Exception;
+import java.io.*;
+
+public class ThrowableExample extends Throwable{
+
+	public static void main(String[] args) throws Exception {
+
+		
+		// BEGIN LAB 3
+		
+
+	try {
+
+        testException();
+    }
+
+    catch (Throwable e) {
+
+        // Print using tostring()
+        System.out.println("Exception: "
+                        + e.toString());
+    }
+}
+
+// Method which throws Exception
+public static void testException() throws Exception{
+    // WHAT YOU NEED to do:  code this method
+	throw new Exception(); 
+}}

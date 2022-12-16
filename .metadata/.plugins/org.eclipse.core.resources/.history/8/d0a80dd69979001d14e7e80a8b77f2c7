@@ -1,0 +1,20 @@
+package Encapsulation;
+
+public class EncapsulationExample {
+
+	public static void main(String[] args) {
+		
+		HumanBeing h1 = new HumanBeing();
+		// using setters of HumanBeing
+		
+		h1.setHeight(3.4f);
+		h1.setWeight(38);
+		h1.setBmi(3.5f);
+		
+		System.out.println("Weight: " + h1.getWeight());
+	}
+
+}
+
+
+

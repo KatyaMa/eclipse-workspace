@@ -1,0 +1,22 @@
+package test_KBA;
+
+import java.util.StringJoiner;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+
+		StringJoiner myJoiner = new StringJoiner(":", "{", "}" );
+		StringJoiner myJoiner2 = new StringJoiner(",", "[", "]" );
+		
+		myJoiner.add("Name").add("Michael");
+		System.out.println(myJoiner);   // {Name:Michael}
+		
+		myJoiner2.add("LastName").add("Jackson");
+		System.out.println(myJoiner2);   // [LastName,Jackson]
+		
+		System.out.println(myJoiner.merge(myJoiner2));  // {Name:Michael:LastName,Jackson}
+	}
+
+}

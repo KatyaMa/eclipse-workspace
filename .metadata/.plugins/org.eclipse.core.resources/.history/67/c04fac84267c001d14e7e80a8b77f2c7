@@ -1,0 +1,10 @@
+package Jump;
+
+public class String_Last_SecondLast {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

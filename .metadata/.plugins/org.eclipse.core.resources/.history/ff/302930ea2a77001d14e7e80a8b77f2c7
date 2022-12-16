@@ -1,0 +1,61 @@
+package miniHackathon;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class miniHackathon {
+
+	public static void main(String[] args) {
+		
+		miniHackathon m = new miniHackathon();
+    	m.loadVendorData();
+    }
+    // this is what the vendor (Crufty-Clunky code Inc) has provided
+    // loadVendorData() method as a starting point.
+    //
+    // here are the fields required for a Customer Object:
+    //
+    //"first_name",
+    //"last_name",
+    //"company_name",
+    //"address",
+    //"city",
+    //"county",
+    //"state",
+    //"zip",
+    //"phone1",
+    //"phone2",
+    //"email",
+    //"web"
+    //
+    // Our requirements are:
+    // Create  Customer objects, populate them  and utilize one of the
+    // Java collection class data structures ( ArrayList or LinkedList for example) to
+    // hold the Customer objects then
+    //
+    // provide a simple lookup (use Scanner obj) as stated in this part of the BRD,
+    // that will take a Last_name as input.
+    //
+    // Place Order (Customer)
+    //  2.The system displays the customer's information: name, street, city, zip, phone, email.
+    //    given input will be last_name.
+    void loadVendorData()
+    {	
+       // please map this file to your drive
+       String file = "/Users/katya/Python/Eclips-Perscholas/us-500.csv";
+       String line;
+       try (BufferedReader br =
+            new BufferedReader(new FileReader(file))) {
+            while((line = br.readLine()) != null){
+            	System.out.println(line);
+            }
+        } catch (Exception e){
+            System.out.println(e);
+        }
+
+	}
+
+}
