@@ -1,12 +1,10 @@
-/*  package Lab5_Student;
+package Lab5_Student;
 
 public class Student {
 	
 	// LAB 5==============================================
-
-	// Code up this object
 	
-	 int id;
+		int id;
      
 	    String name;
 	     
@@ -48,4 +46,3 @@ public class Student {
 	    }
 
 }
-*/

@@ -36,21 +36,18 @@ public class FunctionJavaUtil {
 
         // Single Abstract Method (SAM) types or interfaces
 
-        // The major benefit of java 8 functional interfaces is that we 
-        // can use lambda expressions to instantiate them and avoid 
-        // using bulky anonymous class implementation.
-
-        //  WHAT YOU NEED TODO: Implement the FunctionalInterface  Square 
+        // benefit of functional interfaces is an use lambda expressions to instantiate them 
+        // and avoid using bulky anonymous class implementation.
         
         int a = 5;
 
-        // lambda expression to define the calculate method
         Square s = (int x) -> x * x;  
 
-        // parameter passed and return type must be
-        // same as defined in the prototype
+        // parameter passed and return type must be same as defined in the prototype
         int ans = s.calculate(a);
-        System.out.println(ans);
+        System.out.println(ans);  // 25
 	}
-
+}
+interface Square {
+	int calculate(int x);
 }
