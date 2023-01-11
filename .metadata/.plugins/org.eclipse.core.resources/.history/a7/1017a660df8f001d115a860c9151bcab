@@ -1,0 +1,53 @@
+package kids_sm.FinalProject;
+
+import java.sql.*;
+import java.sql.PreparedStatement;
+
+public class ExamplePrepareStat{
+	
+   public static void main (String[] args)throws Exception {
+	   
+	   // use Prepared Statements to get employee information by using employee id.
+		Class.forName("com.mysql.jdbc.Driver");
+		String url =  "jdbc:mysql://localhost:3306/classicmodels"; 
+		final String USER = "root";
+		final String PASS = "password";
+		Connection conn = DriverManager.getConnection(url, "root", "password");
+		String SelectSQL = "select * from employees where employeeNumber = ?";
+		PreparedStatement mystmt = conn.prepareStatement(SelectSQL);
+		mystmt.setInt(1, 1002);
+		     ResultSet result = mystmt.executeQuery();
+		while(result.next())
+			            {
+			            	String name = result.getString("firstName");
+			            	String email  = result.getString("email");
+			            	System.out.println(name +" | " + email);  // output: Diane | dmurphy@classicmodelcars.com
+			            }
+		
+		
+		// PreparedStatement With DML (Insert, Update, Delete)
+		String sqlQuery = "INSERT INTO EMPLOYEES (officeCode,firstName,lastName,email,extension,reportsTo,VacationHours,employeeNumber,jobTitle) VALUES (?,?,?,?,?,?,?,?,?)";
+		mystmt = conn.prepareStatement(sqlQuery);
+		mystmt.setInt(1, 6);
+		mystmt.setString(2, "Jamil");
+		mystmt.setString(3, "fink");
+		mystmt.setString(4, "JJ@gmail.com");
+		mystmt.setString(5, "2759");
+		mystmt.setInt(6, 1143);
+		mystmt.setInt(7, 9);
+		mystmt.setInt(8, 0003);
+		mystmt.setString(9, "Manager");
+		int affectedRows = mystmt.executeUpdate();
+		System.out.println(affectedRows + " row(s) affected !!");  // output: 1 row(s) affected !!
+		
+		
+		// Example 2: PreparedStatement with Update Statement
+		/* String SelectSQL2 = "update employees set firstName=? , lastName=? where employeeNumber=?";
+		PreparedStatement mystmt2 = conn.prepareStatement(SelectSQL2);
+		mystmt2.setString(1, "Gary");
+		mystmt2.setString(2, "Larson");
+		mystmt2.setLong  (3, 1002);
+		mystmt2.executeUpdate();*/
+
+		}
+}
