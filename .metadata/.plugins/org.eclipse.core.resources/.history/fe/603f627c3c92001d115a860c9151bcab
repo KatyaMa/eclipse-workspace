@@ -1,0 +1,65 @@
+package runner;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import Controller.itemDaoImpl;
+import Daointerface.itemDao;
+import model.Items;
+
+public class AccessItem {
+
+	public static void main(String[] args) {
+
+		// CRUD and business logic will invoke here
+
+		// creating object
+       ItemDao itemDao = new ItemDaoImpl();
+       System.out.println("--------- inserting item records ----------");
+     
+       ArrayList<Items> ItemkList = new ArrayList<Items>();
+
+       Items b1 = new Items();
+       b1.setName("Item_1");
+       b1.setPrice(50.55);
+       itemList.add(b1);
+
+       Items b2 = new Items();
+       b2.setName("Item_2");
+       b1.setPrice(35.60);
+       itemList.add(b2);
+
+       Items b3 = new Items();
+       b3.setName("Item_3");
+       b1.setPrice(70.30);
+       itemList.add(b3);
+
+       Items b4 = new Items();
+       b4.setName("Item_4");
+       b1.setPrice(55.99);
+       itemList.add(b4);
+
+       itemDao.saveitem(itemList);
+  
+
+       /*
+        * Let's get all the Items from the database. We can invoke/use the getAllItems() method in the main() method
+        */
+	System.out.println( " ====== Display list of all Items ====");
+	try {
+	   for (Items ii : itemDao.getAllItems()) {
+		   String name = ii.getName();
+		   float price = ii.getPrice();
+	       System.out.println("======================");
+	       System.out.println("Item Name :" + name + "and item price: " + price);
+
+	   }
+	} catch (ClassNotFoundException e) {
+	   e.printStackTrace();
+	} catch (SQLException e) {
+	   e.printStackTrace();
+	}
+				
+	}
+
+}
