@@ -1,0 +1,5 @@
+package com.hib.model;
+
+public class User {
+
+}

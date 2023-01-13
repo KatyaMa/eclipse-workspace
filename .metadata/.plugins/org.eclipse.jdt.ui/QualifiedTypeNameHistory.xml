@@ -2,4 +2,8 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.System.Logger"/>
+    <fullyQualifiedTypeName name="com.hib.model.User"/>
+    <fullyQualifiedTypeName name="javax.persistence.TypedQuery"/>
+    <fullyQualifiedTypeName name="com.perscholas.model.Department"/>
+    <fullyQualifiedTypeName name="com.perscholas.model.Teacher"/>
 </qualifiedTypeNameHistroy>
