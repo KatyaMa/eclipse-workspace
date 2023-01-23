@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.wst.xml.ui.XMLExampleProjectCreationWizard"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.jdt.ui.java"/>
-			<item value="org.eclipse.ui.Examples"/>
+			<item value="org.eclipse.m2e"/>
 		</list>
 	</section>
 	<section name="SmartImportWizard">
@@ -12,5 +12,12 @@
 		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Learner_XZHCG248\Documents\JUnit5Test"/>
+			<item value="C:\Users\Learner_XZHCG248\Documents\Hib-onetoone"/>
+			<item value="C:\Users\Learner_XZHCG248\Downloads\CrunchifyJunitTest"/>
+			<item value="C:\Users\Learner_XZHCG248\Documents\junit"/>
+			<item value="C:\Users\Learner_XZHCG248\Documents\eclipse-workspace\OneToMany"/>
+		</list>
 	</section>
 </section>

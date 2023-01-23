@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\Learner_XZHCG248\Documents\eclipse-workspace\OneToOne\src\main\java\hibernate.cfg.xml"/>
+			<item value="C:\Users\Learner_XZHCG248\Documents\eclipse-workspace\ManyToOne\src\main\java\com\ManyToOne\ManyToOne\App.java"/>
+			<item value="C:\Users\Learner_XZHCG248\Documents\eclipse-workspace\NamedQuerie\src\main\resources"/>
+			<item value="C:\Users\Learner_XZHCG248\Documents\eclipse-workspace\CRUDusingDAO\src\main\java\runner\AccessBook.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.JUnit.JUnit"/>
+			<item value="com.Hibernate_with_H2_Database.Hibernate_with_H2_Database"/>
+			<item value="com.ManytoMany.ManytoMany"/>
+			<item value="com.OneToOne.OneToOne"/>
+			<item value="com.OneToMany.OneToMany"/>
+			<item value="com.ManyToOne.ManyToOne"/>
+			<item value="com.JDBC_DAO_Challenge.JDBC_DAO_Challenge"/>
+			<item value="com.Named_Queries_Hibernate.Named_Queries_Hibernate"/>
+		</list>
+		<list key="groupId">
+			<item value="com.JUnit"/>
+			<item value="com.Hibernate_with_H2_Database"/>
+			<item value="com.ManytoMany"/>
+			<item value="com.OneToOne"/>
+			<item value="com.OneToMany"/>
+			<item value="com.ManyToOne"/>
+			<item value="com.JDBC_DAO_Challenge"/>
+			<item value="com.Named_Queries_Hibernate"/>
+		</list>
+		<list key="artifactId">
+			<item value=".JUnit"/>
+			<item value="Hibernate_with_H2_Database"/>
+			<item value="ManytoMany"/>
+			<item value="OneToOne"/>
+			<item value="OneToMany"/>
+			<item value="ManyToOne"/>
+			<item value="JDBC_DAO_Challenge"/>
+			<item value="Named_Queries_Hibernate"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>
