@@ -4,6 +4,15 @@
     <fullyQualifiedTypeName name="java.lang.System.Logger"/>
     <fullyQualifiedTypeName name="com.hib.model.User"/>
     <fullyQualifiedTypeName name="javax.persistence.TypedQuery"/>
+    <fullyQualifiedTypeName name="antlr.collections.List"/>
+    <fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
+    <fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
     <fullyQualifiedTypeName name="com.perscholas.model.Department"/>
+    <fullyQualifiedTypeName name="com.perscholas.model.Person"/>
     <fullyQualifiedTypeName name="com.perscholas.model.Teacher"/>
+    <fullyQualifiedTypeName name="com.perscholas.model.Cohort"/>
+    <fullyQualifiedTypeName name="model.Student"/>
+    <fullyQualifiedTypeName name="junit.framework.Assert"/>
+    <fullyQualifiedTypeName name="org.junit.Assert"/>
+    <fullyQualifiedTypeName name="com.perscholas.model.Address"/>
 </qualifiedTypeNameHistroy>
