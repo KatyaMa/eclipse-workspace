@@ -13,6 +13,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/katya/Downloads/thymeleafformdemo"/>
+			<item value="/Users/katya/eclipse-workspace"/>
 			<item value="C:\Users\Learner_XZHCG248\Documents\JUnit5Test"/>
 			<item value="C:\Users\Learner_XZHCG248\Documents\Hib-onetoone"/>
 			<item value="C:\Users\Learner_XZHCG248\Downloads\CrunchifyJunitTest"/>
