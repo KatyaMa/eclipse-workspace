@@ -68,15 +68,15 @@ public class findUser_Hql {
 
 
 	// Example: Aggregate Function
-	public void  getmaxSalary()
-	{
-	   SessionFactory factory = new   Configuration().configure().buildSessionFactory();
-	   Session session = factory.openSession();
-	   String hql = "SELECT max(U.salary) FROM User U";
-	   TypedQuery query = session.createQuery(hql);
-	   double result =(double)query.getSingleResult();
-	   System.out.println(result);
-	}
+//	public void  getmaxSalary()
+//	{
+//	   SessionFactory factory = new   Configuration().configure().buildSessionFactory();
+//	   Session session = factory.openSession();
+//	   String hql = "SELECT max(U.salary) FROM User U";
+//	   TypedQuery query = session.createQuery(hql);
+//	   double result =(double)query.getSingleResult();
+//	   System.out.println(result);
+//	}
 
 	/*
 	 Here is another aggregate function example supported by HQL:
