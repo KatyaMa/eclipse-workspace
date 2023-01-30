@@ -8,6 +8,7 @@
 	<section name="org.eclipse.debug.ui.LAUNCH_CONFIGURATIONS_DIALOG_SECTION">
 		<item key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_1" value="237"/>
 		<item key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_2" value="762"/>
+<<<<<<< Updated upstream
 		<item key="org.eclipse.debug.ui.EXPANDED_NODES" value=", org.eclipse.jdt.junit.launchconfig, "/>
 		<item key="DIALOG_WIDTH" value="634"/>
 		<item key="DIALOG_HEIGHT" value="553"/>
@@ -16,6 +17,11 @@
 	<section name="org.eclipse.debug.ui.SELECT_LAUNCH_CONFIGURATION_DIALOG">
 		<item key="DIALOG_WIDTH" value="279"/>
 		<item key="DIALOG_HEIGHT" value="287"/>
+=======
+		<item key="org.eclipse.debug.ui.EXPANDED_NODES" value=", org.eclipse.jdt.launching.localJavaApplication, "/>
+		<item key="DIALOG_WIDTH" value="909"/>
+		<item key="DIALOG_HEIGHT" value="640"/>
+>>>>>>> Stashed changes
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 	</section>
 </section>

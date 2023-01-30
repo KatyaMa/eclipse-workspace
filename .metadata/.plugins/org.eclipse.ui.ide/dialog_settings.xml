@@ -13,6 +13,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+<<<<<<< Updated upstream
 			<item value="/Users/katya/Downloads/SMS_folder"/>
 			<item value="/Users/katya/Downloads/SMS SBA Mr. S hints-1 2"/>
 			<item value="/Users/katya/Downloads/thymeleafformdemo"/>
@@ -22,6 +23,9 @@
 			<item value="C:\Users\Learner_XZHCG248\Downloads\CrunchifyJunitTest"/>
 			<item value="C:\Users\Learner_XZHCG248\Documents\junit"/>
 			<item value="C:\Users\Learner_XZHCG248\Documents\eclipse-workspace\OneToMany"/>
+=======
+			<item value="/Users/katya/Python/Eclips-Perscholas"/>
+>>>>>>> Stashed changes
 		</list>
 	</section>
 </section>

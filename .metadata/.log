@@ -5183,6 +5183,7 @@ org.eclipse.core.runtime.CoreException: Launch configuration SMSRunner reference
 	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:50)
 	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225)
 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+<<<<<<< Updated upstream
 	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
 	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2147)
 	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:377)
@@ -5244,3 +5245,18 @@ Contains: Missing org.example:SMS:jar:sources:1.0-SNAPSHOT
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2023-01-29 21:12:34.846
 !MESSAGE The POM for com.SMS_SBA:SMS_SBA:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+=======
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2022-12-14 18:08:47.426
+!MESSAGE Cat [in [Working copy] Main.java [in test_KBA [in src [in test_KBA]]]] does not exist
+
+!ENTRY org.eclipse.core.resources 2 2 2022-12-16 11:19:47.804
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2022-12-16 11:19:47.805
+!MESSAGE The project description file (.project) for 'test2' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+>>>>>>> Stashed changes
