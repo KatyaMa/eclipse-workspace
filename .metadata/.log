@@ -5229,3 +5229,18 @@ Contains: Missing org.example:SMS:jar:sources:1.0-SNAPSHOT
 !MESSAGE Could not resolve artifact org.example:SMS:jar:sources:1.0-SNAPSHOT
 !SUBENTRY 2 org.eclipse.m2e.core 4 0 2023-01-29 20:57:59.020
 !MESSAGE Missing org.example:SMS:jar:sources:1.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-01-29 21:12:15.080
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-01-29 21:12:15.086
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-01-29 21:12:16.264
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-01-29 21:12:16.268
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-01-29 21:12:34.846
+!MESSAGE The POM for com.SMS_SBA:SMS_SBA:jar:0.0.1-SNAPSHOT is missing, no dependency information available
