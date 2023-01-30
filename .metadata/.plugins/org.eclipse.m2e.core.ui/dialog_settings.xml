@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/Users/katya/Downloads/SMS SBA Mr. S hints-1 2/StudentCoursesID.java"/>
 			<item value="C:\Users\Learner_XZHCG248\Documents\eclipse-workspace\OneToOne\src\main\java\hibernate.cfg.xml"/>
 			<item value="C:\Users\Learner_XZHCG248\Documents\eclipse-workspace\ManyToOne\src\main\java\com\ManyToOne\ManyToOne\App.java"/>
 			<item value="C:\Users\Learner_XZHCG248\Documents\eclipse-workspace\NamedQuerie\src\main\resources"/>
@@ -29,8 +30,9 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.SMS.SMS1"/>
+			<item value="com.SMS_SBA.SMS_SBA"/>
 			<item value="com.SMS.SMS"/>
+			<item value="com.SMS.SMS1"/>
 			<item value="sms"/>
 			<item value="com.JUnit.JUnit"/>
 			<item value="com.Hibernate_with_H2_Database.Hibernate_with_H2_Database"/>
@@ -42,6 +44,7 @@
 			<item value="com.Named_Queries_Hibernate.Named_Queries_Hibernate"/>
 		</list>
 		<list key="groupId">
+			<item value="com.SMS_SBA"/>
 			<item value="com.SMS"/>
 			<item value="com.JUnit"/>
 			<item value="com.Hibernate_with_H2_Database"/>
@@ -53,8 +56,9 @@
 			<item value="com.Named_Queries_Hibernate"/>
 		</list>
 		<list key="artifactId">
-			<item value="SMS1"/>
+			<item value="SMS_SBA"/>
 			<item value="SMS"/>
+			<item value="SMS1"/>
 			<item value=".JUnit"/>
 			<item value="Hibernate_with_H2_Database"/>
 			<item value="ManytoMany"/>

@@ -6,24 +6,27 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="List&lt;Course&gt;"/>
 		<list key="findhistory">
+			<item value="List&lt;Course&gt;"/>
+			<item value="sPass"/>
+			<item value="Courses"/>
+			<item value="getsCourses"/>
+			<item value="getStudentCourses"/>
+			<item value="Password"/>
+			<item value="getsPassword"/>
+			<item value="GetCourseById"/>
+			<item value="roduct"/>
+			<item value="save"/>
 			<item value="isbn"/>
 			<item value="b "/>
 			<item value="a "/>
 			<item value="customers"/>
 			<item value="items"/>
-			<item value="float"/>
-			<item value="Book"/>
-			<item value="Books"/>
-			<item value="book"/>
-			<item value="b4"/>
-			<item value="b3"/>
-			<item value="b2"/>
-			<item value="b1"/>
-			<item value="libraray"/>
 		</list>
 		<list key="replacehistory">
+			<item value="getsCourses"/>
+			<item value="roject"/>
 			<item value="mail"/>
 			<item value="Item"/>
 			<item value="Customer"/>
@@ -37,10 +40,10 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1116"/>
+		<item key="DIALOG_X_ORIGIN" value="1104"/>
 		<item key="DIALOG_Y_ORIGIN" value="442"/>
-		<item key="DIALOG_WIDTH" value="414"/>
-		<item key="DIALOG_HEIGHT" value="454"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_WIDTH" value="336"/>
+		<item key="DIALOG_HEIGHT" value="402"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 	</section>
 </section>
