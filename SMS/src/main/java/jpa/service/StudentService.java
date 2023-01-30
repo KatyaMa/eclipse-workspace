@@ -17,7 +17,7 @@ import java.util.List;
 public class StudentService implements StudentDAO {
     private static final String URL = "jdbc:mysql://localhost:3306/SMS";
     private static final String USERNAME = "root";
-    private static final String PASSWORD = "Kotena84";
+    private static final String PASSWORD = "";
 
     @Override
     public List<Student> getAllStudents() {
@@ -102,8 +102,7 @@ public class StudentService implements StudentDAO {
                 }
             }
             if(check){
-                System.out.println("||||||||||||||||||||||||||||||||||||||");
-                System.out.println("Dummy, you already have this course =)");
+                System.out.println("You already signed for this cours)");
                 System.out.println();
             }else {
                 courses.add(newCourse);

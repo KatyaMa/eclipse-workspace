@@ -10,7 +10,7 @@ import java.util.List;
 public class CourseService implements CourseDAO {
     private static final String URL = "jdbc:mysql://localhost:3306/SMS";
     private static final String USERNAME = "root";
-    private static final String PASSWORD = "Kotena84";
+    private static final String PASSWORD = "";
 
     public List<Course> getAllCourses() {
         List<Course> courses = new ArrayList<>();

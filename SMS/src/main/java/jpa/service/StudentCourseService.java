@@ -15,12 +15,8 @@ import java.util.List;
 public class StudentCourseService {
     private static final String URL = "jdbc:mysql://localhost:3306/SMS";
     private static final String USERNAME = "root";
-    private static final String PASSWORD = "Kotena84";
+    private static final String PASSWORD = "";
 
-//    public List<StudentCourses> getCoursesByStudent(String email) {
-//        // Use the "CoursesByStudent" NamedQuery to retrieve courses by email
-//        return null;
-//    }
 
     public void addCourseToStudent(String email, int courseId) {
         // Create a new StudentCourses entity with the provided email and courseId and persist it to the database
