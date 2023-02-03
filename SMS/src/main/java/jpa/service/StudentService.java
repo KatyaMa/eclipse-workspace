@@ -17,7 +17,7 @@ import java.util.List;
 public class StudentService implements StudentDAO {
     private static final String URL = "jdbc:mysql://localhost:3306/SMS";
     private static final String USERNAME = "root";
-    private static final String PASSWORD = "";
+    private static final String PASSWORD = "Kotena84";
 
     @Override
     public List<Student> getAllStudents() {
