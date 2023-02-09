@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class MyController{
-   @GetMapping("/")
+   @GetMapping("/hello")
    public String showIndex()
    {
 	   System.out.println("IN  showIndex()");
-                  return "index";
+       return "index";
    }
 }
