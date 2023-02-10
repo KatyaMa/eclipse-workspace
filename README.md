@@ -21,7 +21,8 @@ The following are some of the key topics covered in these labs:
 - Demonstration_of_HibernateQueryLanguage_HQ and Named Queries in Hibernate
 - JDBC Labs etc.
 
+## Author:
 Ekaterina Machneva
 
-Link to my GitHub account:  https://github.com/KatyaMa/eclipse-workspace
-Link to my LinkIn: https://www.linkedin.com/in/ekaterina-machneva/
+- GitHub account:  https://github.com/KatyaMa/eclipse-workspace 
+- LinkedIn: https://www.linkedin.com/in/ekaterina-machneva/
