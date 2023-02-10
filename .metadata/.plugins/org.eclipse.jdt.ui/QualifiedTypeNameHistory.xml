@@ -4,10 +4,14 @@
     <fullyQualifiedTypeName name="org.springframework.boot.web.servlet.error.ErrorController"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
     <fullyQualifiedTypeName name="ch.qos.logback.core.model.Model"/>
-    <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
 </qualifiedTypeNameHistroy>
