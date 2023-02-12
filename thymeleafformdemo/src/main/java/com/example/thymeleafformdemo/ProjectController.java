@@ -1,5 +1,8 @@
 package com.example.thymeleafformdemo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,12 +25,16 @@ public class ProjectController {
     }
 
     @PostMapping("/save-project")
-    public String saveProjectSubmission(@ModelAttribute Project project) {
+    public String saveProjectSubmission(@ModelAttribute Project project, Model model)
 
-        // TODO: save project in DB here
-//    	projectList.add(project);
-//    	model.addAttribute("projectList", projectList);
+ {
+
+    	List<Project> projectList = new ArrayList<>();
+		// TODO: save project in DB here
+    	projectList.add(project);
+    	model.addAttribute("projectList", projectList);
 
         return "result";
     }
+    
 }

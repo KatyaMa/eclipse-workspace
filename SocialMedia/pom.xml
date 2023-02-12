@@ -119,6 +119,23 @@
 			<artifactId>mssqlserver</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.HibernateAnnotation</groupId>
+			<artifactId>HibernateJPA</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-core</artifactId>
+		    <version>5.5.7.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.ManyToOne</groupId>
+			<artifactId>ManyToOne</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
