@@ -23,6 +23,9 @@ public class UserDao {
 	}
 
 	public User getById(Long id) {
+		if (id == null) {
+			throw new IllegalArgumentException("id cannot be null");
+		}
 		Session session = sessionFactory.getCurrentSession();
 		return session.get(User.class, id);
 	}
@@ -34,10 +37,14 @@ public class UserDao {
 
 	// Update user
 	public void update(User user) {
+		if (user == null) {
+			throw new IllegalArgumentException("user cannot be null");
+		}
 		Session session = sessionFactory.getCurrentSession();
 		session.merge(user);  // use the merge() method to update an entity in the database
 	}
 
+	
 	// Delete user
 	// @Transactional annotation on the deleteUser() method ensures that the method is executed within a transaction, which is required when making changes to the database
 	@Transactional
@@ -46,6 +53,7 @@ public class UserDao {
 	    session.remove(user);
 	}
 	
+
 	
 
 }
