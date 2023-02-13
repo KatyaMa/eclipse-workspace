@@ -24,8 +24,6 @@ public class Post {
 	@JoinColumn(name = "user_id", nullable = false)
 	private User user;
 
-//	private Long senderId;
-
 	@Column(name = "message", nullable = false) // "message" is a required field and cannot be null
 	private String message;
 
