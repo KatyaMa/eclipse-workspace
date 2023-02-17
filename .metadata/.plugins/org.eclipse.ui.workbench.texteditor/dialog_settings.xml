@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="user1"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="session"/>
+			<item value="essionFactory"/>
+			<item value="sessionFactory"/>
 			<item value="test1"/>
 			<item value="test2"/>
 			<item value="SMS"/>
@@ -20,9 +23,6 @@
 			<item value="getsPassword"/>
 			<item value="GetCourseById"/>
 			<item value="roduct"/>
-			<item value="save"/>
-			<item value="isbn"/>
-			<item value="b "/>
 		</list>
 		<list key="replacehistory">
 			<item value="user1"/>

@@ -14,6 +14,12 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/katya/eclipse-workspace/WidgetAB2"/>
+			<item value="/Users/katya/projects-JAVA/javadevjournal/Spring-Boot/spring-boot-log4j2-demo"/>
+			<item value="/Users/katya/eclipse-workspace/WidgetAB"/>
+			<item value="/Users/katya/eclipse-workspace/SMS_folder"/>
+			<item value="/Users/katya/eclipse-workspace/SMS SBA Mr. S hints-1"/>
+			<item value="/Users/katya/eclipse-workspace/thymeleafformdemo"/>
 			<item value="/Users/katya/Downloads/thymeleafformdemo 3"/>
 			<item value="/Users/katya/Downloads/thymeleafformdemo 2"/>
 			<item value="/Users/katya/Downloads/demo 4/demo"/>

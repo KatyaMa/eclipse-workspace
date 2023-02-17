@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Movie Details</h1>
+    <form action="#" th:action="@{/movie}" method="get">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+        <button type="submit">Search</button>
+    </form>
+    <div th:if="${movie}">
+        <h2 th:text="${movie.Title} + ' (' + ${movie.Year} + ')'"></h2>
+        <img th:src="${movie.Poster}">
+        <p><strong>Rated:</strong> <span th:text="${movie.Rated}"></span></p>
+        <p><strong>Released:</strong> <span th:text="${movie.Released}"></span></p>
+        <p><strong>Runtime:</strong> <span th:text="${movie.Runtime}"></span></p>
+        <p><strong>Genre:</strong> <span th:text="${movie.Genre}"></span></p>
+        <p><strong>Director:</strong> <span th:text="${movie.Director}"></span></p>
+        <p><strong>Writer:</strong> <span th:text="${movie.Writer}"></span></p>
+        <p><strong>Actors:</strong> <span th:text="${movie.Actors}"></span></p>
+        <p><strong>Plot:</strong> <span th:text="${movie.Plot}"></span></p>
+        <p><strong>Language:</strong> <span th:text="${movie.Language}"></span></p>
+        <p><strong>Country:</strong> <span th:text="${movie.Country}"></span></p>
+        <p><strong>Awards:</strong> <span th:text="${movie.Awards}"></span></p>
+        <p><strong>Rotten Tomatoes:</strong> <span th:text="${movie.Ratings.?[source == 'Rotten Tomatoes'][0].Value}"></span></p>
+    </div>
+</body>
+</html>
