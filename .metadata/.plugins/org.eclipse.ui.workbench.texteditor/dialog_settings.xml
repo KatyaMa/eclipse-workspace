@@ -6,23 +6,17 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="TutorialServices.java"/>
 		<list key="findhistory">
+			<item value="TutorialServices.java"/>
+			<item value="&#x09;@GetMapping(&quot;/tutorials/published&quot;)"/>
+			<item value="&#x09;@GetMapping(&quot;/tutorials&quot;)"/>
+			<item value="mysql"/>
+			<item value="desc"/>
+			<item value="desk"/>
 			<item value="session"/>
 			<item value="essionFactory"/>
 			<item value="sessionFactory"/>
-			<item value="test1"/>
-			<item value="test2"/>
-			<item value="SMS"/>
-			<item value="List&lt;Course&gt;"/>
-			<item value="sPass"/>
-			<item value="Courses"/>
-			<item value="getsCourses"/>
-			<item value="getStudentCourses"/>
-			<item value="Password"/>
-			<item value="getsPassword"/>
-			<item value="GetCourseById"/>
-			<item value="roduct"/>
 		</list>
 		<list key="replacehistory">
 			<item value="user1"/>

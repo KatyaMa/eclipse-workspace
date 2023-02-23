@@ -14,6 +14,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/katya/eclipse-workspace/Spring Data Rest CRUD API"/>
+			<item value="/Users/katya/eclipse-workspace/Springboot-dataJPA"/>
+			<item value="/Users/katya/eclipse-workspace/thymeleaf-file-upload-master"/>
 			<item value="/Users/katya/eclipse-workspace/WidgetAB2"/>
 			<item value="/Users/katya/projects-JAVA/javadevjournal/Spring-Boot/spring-boot-log4j2-demo"/>
 			<item value="/Users/katya/eclipse-workspace/WidgetAB"/>
