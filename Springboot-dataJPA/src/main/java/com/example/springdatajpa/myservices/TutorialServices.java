@@ -1,4 +1,4 @@
-package com.example.springdatajpa.myservices;
+/* package com.example.springdatajpa.myservices;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,4 +62,4 @@ public class TutorialServices {
            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
        }
    }
-}
+}  */

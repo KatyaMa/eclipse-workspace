@@ -1,4 +1,4 @@
-package com.example.springdatajpa.mycontroller;
+/* package com.example.springdatajpa.mycontroller;
 
 import java.util.List;
 import java.util.Optional;
@@ -32,13 +32,13 @@ public class TutorialController {
 
    @GetMapping("/tutorials/{id}")
    public Optional<Tutorial> getTutorialById(@PathVariable("id") long id) {
-    /* The TutorialRepository provides a method findById(). This methods takes the id of the
-    Tutorial to find. This method used to be findOne(). But since Spring data jpa 2.0 it's changed to findById().
-     */
+    // The TutorialRepository provides a method findById(). This methods takes the id of the
+    // Tutorial to find. This method used to be findOne(). But since Spring data jpa 2.0 it's changed to findById().
+     
        return  tutorialServices.getTutorialById(id);
    }
-  /*  To add new Tutorials is really easy. You do this by using the TutorialRepository save() method.
-   */
+  //  To add new Tutorials is really easy. You do this by using the TutorialRepository save() method.
+   
    @PostMapping("/tutorials")
    public void createTutorial(@RequestBody Tutorial tutorial) {
        tutorialServices.addTutorial(tutorial);
@@ -62,9 +62,9 @@ public class TutorialController {
    public void deleteTutorial(@PathVariable("id") long id) {
        tutorialServices.deleteTutorial(id);
    }
-  /* To delete a tutorials record, you simply use the deleteById() method provided by the tutorialRepository.
-   Then you pass in the id of the record you want to delete.
-   */
+  // To delete a tutorials record, you simply use the deleteById() method provided by the tutorialRepository.
+   // Then you pass in the id of the record you want to delete.
+   
    @DeleteMapping("/tutorials")
    public void deleteAllTutorials() {
 
@@ -74,3 +74,6 @@ public class TutorialController {
    @GetMapping("/tutorials/published")
    public ResponseEntity<List<Tutorial>> findByPublished() {
        return tutorialServices.findByPublished();   }  }
+       
+       
+       */
