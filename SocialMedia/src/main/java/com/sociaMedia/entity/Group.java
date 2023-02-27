@@ -1,4 +1,4 @@
-package entity;
+package com.sociaMedia.entity;
 
 import java.time.LocalDateTime;
 import java.util.HashSet;

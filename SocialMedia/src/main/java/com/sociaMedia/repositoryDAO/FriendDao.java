@@ -1,4 +1,4 @@
-package repositoryDAO;
+package com.sociaMedia.repositoryDAO;
 
 import java.util.List;
 import java.util.logging.Level;
@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import entity.Friend;
+import com.sociaMedia.entity.Friend;
 
 @Repository
 public class FriendDao {

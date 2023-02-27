@@ -1,10 +1,10 @@
-package repositoryDAO;
+package com.sociaMedia.repositoryDAO;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
-import entity.Message;
-import entity.User;
+import com.sociaMedia.entity.Message;
+import com.sociaMedia.entity.User;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;

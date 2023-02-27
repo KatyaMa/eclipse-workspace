@@ -1,4 +1,4 @@
-package repositoryDAO;
+package com.sociaMedia.repositoryDAO;
 
 import java.util.List;
 
@@ -8,10 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import entity.User;
+import com.sociaMedia.entity.User;
 
+//     haven't used this class!!!!! see UserRepository!!!!!!!!!!
 @Repository
-public class UserDao {
+public class UserDao  {
 
 	@Autowired
 	private SessionFactory sessionFactory;

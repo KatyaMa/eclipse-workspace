@@ -1,4 +1,4 @@
-package repositoryDAO;
+package com.sociaMedia.repositoryDAO;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import entity.Post;
+import com.sociaMedia.entity.Post;
 
 @Repository
 public class PostDao {

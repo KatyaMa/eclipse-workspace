@@ -1,12 +1,12 @@
-package repositoryDAO;
+package com.sociaMedia.repositoryDAO;
 
 import java.util.List;
 
+import com.sociaMedia.entity.Group;
+import com.sociaMedia.entity.User;
+
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
-
-import entity.Group;
-import entity.User;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 

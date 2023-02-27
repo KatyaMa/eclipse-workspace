@@ -1,24 +1,25 @@
-package service;
+package com.sociaMedia.service;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
-import entity.Comment;
-import entity.Friend;
-import entity.Group;
-import entity.Like;
-import entity.Message;
-import entity.Post;
-import entity.User;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 import jakarta.persistence.TypedQuery;
-import repositoryDAO.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.sociaMedia.entity.Comment;
+import com.sociaMedia.entity.Friend;
+import com.sociaMedia.entity.Group;
+import com.sociaMedia.entity.Like;
+import com.sociaMedia.entity.Message;
+import com.sociaMedia.entity.Post;
+import com.sociaMedia.entity.User;
+import com.sociaMedia.repositoryDAO.*;
 
 @Service
 @Transactional

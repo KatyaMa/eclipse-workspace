@@ -1,13 +1,13 @@
-package repositoryDAO;
+package com.sociaMedia.repositoryDAO;
 
 import java.util.List;
+
+import com.sociaMedia.entity.Like;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 import jakarta.persistence.TypedQuery;
-
-import entity.Like;
 
 // This LikeDao class includes methods to add, retrieve and remove likes. It also includes methods to get all likes for a given user or post
 public class LikeDao {
