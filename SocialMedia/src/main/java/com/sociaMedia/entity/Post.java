@@ -29,6 +29,12 @@ public class Post {
 
 	@Column(name = "created_at", nullable = false) // "created_at" is a required field and cannot be null
 	private LocalDateTime createdAt;
+	
+	@Column(name = "feeling") 
+	private String feeling;
+	
+	@Column(name = "game") 
+	private String game;
 
 	public Long getId() {
 		return id;
@@ -60,6 +66,22 @@ public class Post {
 
 	public void setCreatedAt(LocalDateTime createdAt) {
 		this.createdAt = createdAt;
+	}
+
+	public String getFeeling() {
+		return feeling;
+	}
+
+	public void setFeeling(String feeling) {
+		this.feeling = feeling;
+	}
+
+	public String getGame() {
+		return game;
+	}
+
+	public void setGame(String game) {
+		this.game = game;
 	}
 
 	

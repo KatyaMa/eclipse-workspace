@@ -6,8 +6,8 @@ import java.util.Date;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 
-@Entity
-@Table(name = "likes")     // annotations to map to the corresponding database table "likes"
+//@Entity
+//@Table(name = "likes")     // annotations to map to the corresponding database table "likes"
 
 public class GroupPost {
 

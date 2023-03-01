@@ -21,8 +21,8 @@ import com.sociaMedia.entity.Post;
 import com.sociaMedia.entity.User;
 import com.sociaMedia.repositoryDAO.*;
 
-@Service
-@Transactional
+//@Service
+//@Transactional
 public class SocialMediaService {
 
 	EntityManagerFactory emf = Persistence.createEntityManagerFactory("socialmedia");

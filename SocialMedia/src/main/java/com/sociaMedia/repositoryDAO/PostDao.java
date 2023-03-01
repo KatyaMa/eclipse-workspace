@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.sociaMedia.entity.Post;
 
+// dont use this class. instead used PostRepository!!!!!!!!!!! Delete this class later!!!!
 @Repository
 public class PostDao {
     
