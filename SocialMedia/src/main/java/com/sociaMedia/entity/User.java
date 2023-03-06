@@ -3,6 +3,8 @@ package com.sociaMedia.entity;
 //import java.time.LocalDateTime;
 
 import java.util.Collection;
+import java.util.List;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -19,7 +21,11 @@ public class User {
 	   private String email;
 	   private String password;
 	 
-	   
+	   // to be deleted
+//	   @OneToMany(mappedBy = "user")
+//	   @OrderBy("createdAt DESC")
+//	   private List<Post> posts;
+
 // haven't used those columns yet. saved here for later	   
 //	@Column(name = "registeredAt", nullable = false) // "registeredAt" is required field and cannot be null
 //	private LocalDateTime registeredAt;

@@ -6,23 +6,23 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="hibernate"/>
+		<item key="selection" value="mysql"/>
 		<list key="findhistory">
+			<item value="MySQL"/>
+			<item value="MySQL Connector"/>
+			<item value="post"/>
+			<item value="message"/>
+			<item value="class"/>
+			<item value="id"/>
+			<item value="name"/>
+			<item value="days"/>
+			<item value="hiberna"/>
+			<item value="hibern"/>
+			<item value="bootstrap"/>
+			<item value="mysql-connector-j"/>
 			<item value="hibernate"/>
 			<item value="hibernate-core"/>
-			<item value="mysql-connector-j"/>
 			<item value="mysql-connector-java"/>
-			<item value="spring-boot-starter-test"/>
-			<item value="lombok"/>
-			<item value="spring-boot-devtools"/>
-			<item value="spring-boot-starter-web"/>
-			<item value="EntityManagerFactory"/>
-			<item value="spring-boot-starter-jdbc"/>
-			<item value="spring-boot-starter-data-jpa"/>
-			<item value="spring-cloud-starter"/>
-			<item value="dependencyManagement"/>
-			<item value="commons-beanutils"/>
-			<item value="HibernateJPA"/>
 		</list>
 		<list key="replacehistory">
 			<item value="user1"/>
@@ -42,8 +42,8 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1652"/>
-		<item key="DIALOG_Y_ORIGIN" value="131"/>
+		<item key="DIALOG_X_ORIGIN" value="2092"/>
+		<item key="DIALOG_Y_ORIGIN" value="169"/>
 		<item key="DIALOG_WIDTH" value="336"/>
 		<item key="DIALOG_HEIGHT" value="402"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>

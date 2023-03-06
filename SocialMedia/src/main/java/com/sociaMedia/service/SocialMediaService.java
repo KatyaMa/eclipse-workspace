@@ -142,7 +142,7 @@ public class SocialMediaService {
 	}
 
 
-	// Comment methods
+	// "Comment" methods
 	// These methods include input validation to ensure that the message or comment
 	// content is not empty, and error handling to handle cases where a message or
 	// comment with the specified ID cannot be found in the database. The methods
