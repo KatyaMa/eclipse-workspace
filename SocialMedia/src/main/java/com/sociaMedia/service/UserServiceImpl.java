@@ -2,7 +2,10 @@ package com.sociaMedia.service;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 import java.util.stream.Collectors;
+
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -38,6 +41,23 @@ public class UserServiceImpl implements UserService {
        user.setPassword(passwordEncoder.encode(registration.getPassword()));
        user.setRoles(Arrays.asList(new Role("ROLE_USER")));
        return userRepository.save(user);
+   }
+
+   public User getUserById(Long userId) {
+       Optional<User> userOptional = userRepository.findById(userId);
+       if (userOptional.isPresent()) {
+           return userOptional.get();
+       } else {
+           throw new RuntimeException("User not found");
+       }
+   }
+
+   public List<User> getAllUsers() {
+       return userRepository.findAll();
+   }
+
+   public void deleteUser(Long userId) {
+       userRepository.deleteById(userId);
    }
 
    @Override
