@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,30 +16,36 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.sociaMedia.entity.Message;
 import com.sociaMedia.entity.User;
+import com.sociaMedia.repositoryDAO.UserRepository;
 import com.sociaMedia.service.MessageService;
-import com.sociaMedia.service.UserServiceImpl;
+import com.sociaMedia.service.UserService;
 
 @RestController
 @RequestMapping("/messages")
 public class MessageController {
 
     private final MessageService messageService;
-    private final UserServiceImpl userServiceImpl;
+    private final UserService userService;
+    @Autowired
+    private UserRepository userRepository;
+
 
     @Autowired
-    public MessageController(MessageService messageService, UserServiceImpl userServiceImpl) {
+    public MessageController(MessageService messageService, UserService userService) {
         this.messageService = messageService;
-        this.userServiceImpl = userServiceImpl;
+        this.userService = userService;
     }
-    @GetMapping("/view")
-    public String viewMessages() {
+    @GetMapping("view")
+    public String viewMessages(Model model) {
+        List<Message> messages = messageService.getAllMessages();
+        model.addAttribute("messages", messages);
         return "messages";
     }
 
     @PostMapping("/")
     public ResponseEntity<?> sendMessage(@RequestBody Message message) {
-        User sender = userServiceImpl.getUserById(message.getSender().getId());
-        User receiver = userServiceImpl.getUserById(message.getReceiver().getId());
+        User sender = userService.getUserById(message.getSender().getId());
+        User receiver = userService.getUserById(message.getReceiver().getId());
 
         if (sender == null || receiver == null) {
             return ResponseEntity.badRequest().body("Invalid user ID provided");
@@ -55,8 +62,8 @@ public class MessageController {
 
     @GetMapping("/{senderId}/{receiverId}")
     public ResponseEntity<List<Message>> getMessagesBySenderAndReceiver(@PathVariable Long senderId, @PathVariable Long receiverId) {
-        User sender = userServiceImpl.getUserById(senderId);
-        User receiver = userServiceImpl.getUserById(receiverId);
+        User sender = userService.getUserById(senderId);
+        User receiver = userService.getUserById(receiverId);
 
         if (sender == null || receiver == null) {
             return ResponseEntity.badRequest().body(null);
@@ -69,7 +76,7 @@ public class MessageController {
 
     @GetMapping("/{userId}")
     public ResponseEntity<List<Message>> getMessagesBySenderOrReceiver(@PathVariable Long userId) {
-        User user = userServiceImpl.getUserById(userId);
+        User user = userService.getUserById(userId);
 
         if (user == null) {
             return ResponseEntity.badRequest().body(null);
@@ -91,6 +98,12 @@ public class MessageController {
         messageService.deleteMessage(messageId);
 
         return ResponseEntity.ok("Message deleted successfully");
+    }
+    @GetMapping("/messages")
+    public String getMessages(Model model) {
+        List<User> users = userRepository.findAll();
+        model.addAttribute("users", users);
+        return "messages";
     }
 
 }

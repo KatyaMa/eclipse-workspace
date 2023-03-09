@@ -73,11 +73,8 @@ public class PostController {
     // method that retrieves all posts from the repository and adds them to the model
     @GetMapping("/")
     public String showHomePage(Model model) {
-//    	System.out.println("Retrieving all posts from the repository");
-
-//        List<Post> posts = postRepository.findAll();
+    	
         List<Post> posts = postRepository.findAllByOrderByCreatedAtDesc();
-
         model.addAttribute("posts", posts);
         return "index";
     }

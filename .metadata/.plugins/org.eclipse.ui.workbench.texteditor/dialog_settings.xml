@@ -6,25 +6,27 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="mysql"/>
+		<item key="selection" value="th:"/>
 		<list key="findhistory">
-			<item value="MySQL"/>
-			<item value="MySQL Connector"/>
+			<item value="th:"/>
+			<item value="th"/>
+			<item value="receiver"/>
+			<item value="reciever"/>
+			<item value="sender"/>
+			<item value="UserServiceImpl"/>
+			<item value="userServiceImpl"/>
+			<item value="UserService"/>
+			<item value="thymeleaf-layout-dialect"/>
+			<item value="jdbc&lt;footer id=&quot;footer&quot; class=&quot;footer py-4  border-top&quot;&gt;&#x0A;    &lt;p class=&quot;footer_p&quot;&gt;&lt;a href=&quot;index.html&quot;&gt; QUIZ&lt;/a&gt; | &lt;a href=&quot;chat.html&quot;&gt;CHAT&lt;/a&gt; | &lt;a href=&quot;aboutMe.html&quot;&gt;ABOUT&#x0A;            ME&lt;/a&gt; | &lt;a href=&quot;contact.html&quot;&gt;CONTACT&lt;/a&gt; | LOGIN&lt;/p&gt;&#x0A;    &lt;p&gt;Copyright © 2023. All Rights Reserved By &lt;a style=&quot;color: rgb(118, 210, 252)&quot;&#x0A;            href=&quot;https://github.com/KatyaMa/SBA&quot;&gt;Ekaterina Machneva&lt;/a&gt;&lt;/p&gt;&#x0A;&lt;/footer&gt;"/>
+			<item value="jdbc"/>
+			<item value="model.addAttribute"/>
+			<item value="new-post"/>
+			<item value="post-field"/>
 			<item value="post"/>
-			<item value="message"/>
-			<item value="class"/>
-			<item value="id"/>
-			<item value="name"/>
-			<item value="days"/>
-			<item value="hiberna"/>
-			<item value="hibern"/>
-			<item value="bootstrap"/>
-			<item value="mysql-connector-j"/>
-			<item value="hibernate"/>
-			<item value="hibernate-core"/>
-			<item value="mysql-connector-java"/>
 		</list>
 		<list key="replacehistory">
+			<item value="userService"/>
+			<item value="UserService"/>
 			<item value="user1"/>
 			<item value="testUser"/>
 			<item value="getsCourses"/>
@@ -38,12 +40,11 @@
 			<item value="c4"/>
 			<item value="c3"/>
 			<item value="c2"/>
-			<item value="c1"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="2092"/>
-		<item key="DIALOG_Y_ORIGIN" value="169"/>
+		<item key="DIALOG_X_ORIGIN" value="2056"/>
+		<item key="DIALOG_Y_ORIGIN" value="262"/>
 		<item key="DIALOG_WIDTH" value="336"/>
 		<item key="DIALOG_HEIGHT" value="402"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>

@@ -1,5 +1,6 @@
 package com.sociaMedia.service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,20 +9,38 @@ import org.springframework.stereotype.Service;
 import com.sociaMedia.entity.Message;
 import com.sociaMedia.entity.User;
 import com.sociaMedia.repositoryDAO.MessageRepository;
+import com.sociaMedia.repositoryDAO.UserRepository;
 
 import jakarta.persistence.TypedQuery;
 
 @Service
 public class MessageService {
     
+	@Autowired
     private final MessageRepository messageRepository;
 //    private final UserService userService;
+
+    @Autowired
+    private UserRepository userRepository;
 
     @Autowired
     public MessageService(MessageRepository messageRepository) {
         this.messageRepository = messageRepository;
     }
 
+    public void sendMessage(Long senderId, Long receiverId, String message) {
+        User sender = userRepository.findById(senderId).orElseThrow(() -> new IllegalArgumentException("Invalid sender ID"));
+        User receiver = userRepository.findById(receiverId).orElseThrow(() -> new IllegalArgumentException("Invalid receiver ID"));
+        LocalDateTime now = LocalDateTime.now();
+        Message newMessage = new Message();
+        newMessage.setSender(sender);
+        newMessage.setReceiver(receiver);
+        newMessage.setCreatedAt(now);
+        newMessage.setMessage(message);
+        messageRepository.save(newMessage);
+    }
+
+    
     public Message saveMessage(Message message) {
         return messageRepository.save(message);
     }
@@ -45,6 +64,10 @@ public class MessageService {
         } else {
             throw new RuntimeException("Message not found");
         }
+    }
+
+    public List<Message> getAllMessages() {
+        return messageRepository.findAll();
     }
 
     
