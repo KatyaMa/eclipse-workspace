@@ -24,14 +24,27 @@ public class Message {        // Message: a class to represent messages sent bet
     private User sender;
 
     @ManyToOne
-    @JoinColumn(name = "receiver_id", nullable = false)
+    @JoinColumn(name = "receiver_id")
     private User receiver;
 
-    @Column(name = "created_at", nullable = false)
+    @Column(name = "created_at")
     private LocalDateTime createdAt;
 	
     @Column(name = "message", nullable = false)
 	private String message;
+
+
+	
+	public Message(User sender, User receiver, String message) {
+		super();
+		this.sender = sender;
+		this.receiver = receiver;
+		this.message = message;
+	}
+
+    // default constructor 
+	public Message() {}
+
 
 	public Long getId() {
 		return id;

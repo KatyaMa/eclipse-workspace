@@ -51,8 +51,18 @@ public class UserServiceImpl implements UserService {
            throw new RuntimeException("User not found");
        }
    }
+   
+   public User findById(Long id) {
+	    Optional<User> userOptional = userRepository.findById(id);
+	    if (userOptional.isPresent()) {
+	        return userOptional.get();
+	    } else {
+	        throw new RuntimeException("User not found");
+	    }
+	}
 
-   public List<User> getAllUsers() {
+
+   public List<User> findAll() {
        return userRepository.findAll();
    }
 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>User profile info with posts</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+<link
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+	rel="stylesheet">
+<!-- <script>
+	$(function() {
+		$("#header").load("header.html");
+		$("#footer").load("footer.html");
+	});
+</script> -->
+</head>
+<body>
+
+
+
+	<div class="container">
+		<!-- Header goes here -->
+		<div th:replace="header :: header"></div>
+
+
+
+
+		<!--Footer goes here-->
+		<div th:replace="footer :: footer"></div>
+
+	</div>
+	
+	
+	<!--  script for NavBar -->
+	<script type="text/javascript"
+		th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>
+	<script type="text/javascript"
+		th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+</body>
+</html>

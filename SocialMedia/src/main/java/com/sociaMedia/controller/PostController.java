@@ -44,17 +44,6 @@ public class PostController {
         return "index";
     }
 
-//    @PostMapping("/create-post")
-//    public String createPost(@RequestParam("message") String message, Principal principal) {
-//        Post post = new Post();
-//        post.setMessage(message);
-//        post.setCreatedAt(LocalDateTime.now());
-//        User currentUser = userRepository.findByEmail(principal.getName());
-//        post.setUser(currentUser);
-//        postRepository.save(post);
-//        
-//        return "redirect:/"; // redirect to the home page after creating the post
-//    }
     
     @PostMapping("/submit")
     public String handleSubmit(@RequestParam("message") String message, @AuthenticationPrincipal UserDetails userDetails, Model model) {
@@ -69,6 +58,8 @@ public class PostController {
         model.addAttribute("success", true);
         return "redirect:/"; // redirect to the home page after creating the post
     }
+    
+    
     
     // method that retrieves all posts from the repository and adds them to the model
     @GetMapping("/")

@@ -112,7 +112,7 @@ public class SocialMediaService {
 
 	public Message postMessage(User sender, User receiver, String message) {
 	    EntityManager em = emf.createEntityManager();
-	    Message newMessage = new Message();
+	    Message newMessage = new Message(receiver, sender, message);
 	    newMessage.setSender(sender);
 	    newMessage.setReceiver(receiver);
 	    newMessage.setCreatedAt(LocalDateTime.now());

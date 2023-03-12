@@ -30,19 +30,20 @@
 <script
 	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- -->	
+ -->
 <!--  <script>
 	$(function() {
 		$("#header").load("header.html");
 		$("#footer").load("footer.html");
 	});
 </script>
- --></head>
+ -->
+</head>
 
 
 <body>
 	<!-- Header goes here -->
-    <div th:replace="header :: header"></div>
+	<div th:replace="header :: header"></div>
 
 	<div class="container-fluid h-100">
 		<div class="row justify-content-center h-100">
@@ -60,76 +61,79 @@
 					</div>
 					<div class="card-body contacts_body">
 						<ul class="contacts">
-						<li  class="active" th:each="user : ${users}">
-							<div class="d-flex bd-highlight">
-								<div class="img_cont">
-									<img
-										src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
-										alt="" class="rounded-circle user_img"> <span
-										class="online_icon"></span>
+
+							<li th:class="${status?.index == 0 ? 'active' : ''}"
+								th:each="user : ${users}" data-receiver-id="${user.id}">
+
+								<div class="d-flex bd-highlight">
+									<div class="img_cont">
+										<img
+											src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
+											alt="" class="rounded-circle user_img"> <span
+											class="online_icon"></span>
+									</div>
+									<div class="user_info">
+										<span th:text="${user.firstName} + ' ' + ${user.lastName}"></span>
+										<p th:text="${user.firstName} + ' is online'"></p>
+									</div>
 								</div>
-								<div class="user_info">
-									<span th:text="${user.firstName}">Max</span>
-									<p>Max is online</p>
+							</li>
+							<li>
+								<div class="d-flex bd-highlight">
+									<div class="img_cont">
+										<img
+											src="https://2.bp.blogspot.com/-8ytYF7cfPkQ/WkPe1-rtrcI/AAAAAAAAGqU/FGfTDVgkcIwmOTtjLka51vineFBExJuSACLcBGAs/s320/31.jpg"
+											alt="" class="rounded-circle user_img"> <span
+											class="online_icon offline"></span>
+									</div>
+									<div class="user_info">
+										<span>Ekaterina Machneva</span>
+										<p>Ekaterina left 7 mins ago</p>
+									</div>
 								</div>
-							</div>
-						</li>
-						<li>
-							<div class="d-flex bd-highlight">
-								<div class="img_cont">
-									<img
-										src="https://2.bp.blogspot.com/-8ytYF7cfPkQ/WkPe1-rtrcI/AAAAAAAAGqU/FGfTDVgkcIwmOTtjLka51vineFBExJuSACLcBGAs/s320/31.jpg"
-										alt="" class="rounded-circle user_img"> <span
-										class="online_icon offline"></span>
+							</li>
+							<li>
+								<div class="d-flex bd-highlight">
+									<div class="img_cont">
+										<img
+											src="https://i.pinimg.com/originals/ac/b9/90/acb990190ca1ddbb9b20db303375bb58.jpg"
+											alt="" class="rounded-circle user_img"> <span
+											class="online_icon"></span>
+									</div>
+									<div class="user_info">
+										<span>Art Mac</span>
+										<p>Art is online</p>
+									</div>
 								</div>
-								<div class="user_info">
-									<span >Ekaterina Machneva</span>
-									<p>Ekaterina left 7 mins ago</p>
+							</li>
+							<li>
+								<div class="d-flex bd-highlight">
+									<div class="img_cont">
+										<img
+											src="http://profilepicturesdp.com/wp-content/uploads/2018/07/sweet-girl-profile-pictures-9.jpg"
+											alt="" class="rounded-circle user_img"> <span
+											class="online_icon offline"></span>
+									</div>
+									<div class="user_info">
+										<span>Anya Anya</span>
+										<p>Anya left 30 mins ago</p>
+									</div>
 								</div>
-							</div>
-						</li>
-						<li>
-							<div class="d-flex bd-highlight">
-								<div class="img_cont">
-									<img
-										src="https://i.pinimg.com/originals/ac/b9/90/acb990190ca1ddbb9b20db303375bb58.jpg"
-										alt="" class="rounded-circle user_img"> <span
-										class="online_icon"></span>
+							</li>
+							<li>
+								<div class="d-flex bd-highlight">
+									<div class="img_cont">
+										<img
+											src="https://static.turbosquid.com/Preview/001214/650/2V/boy-cartoon-3D-model_D.jpg"
+											alt="" class="rounded-circle user_img"> <span
+											class="online_icon offline"></span>
+									</div>
+									<div class="user_info">
+										<span>Sammy Sam</span>
+										<p>Sammy left 50 mins ago</p>
+									</div>
 								</div>
-								<div class="user_info">
-									<span>Art Mac</span>
-									<p>Art is online</p>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="d-flex bd-highlight">
-								<div class="img_cont">
-									<img
-										src="http://profilepicturesdp.com/wp-content/uploads/2018/07/sweet-girl-profile-pictures-9.jpg"
-										alt="" class="rounded-circle user_img"> <span
-										class="online_icon offline"></span>
-								</div>
-								<div class="user_info">
-									<span>Anya Anya</span>
-									<p>Anya left 30 mins ago</p>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="d-flex bd-highlight">
-								<div class="img_cont">
-									<img
-										src="https://static.turbosquid.com/Preview/001214/650/2V/boy-cartoon-3D-model_D.jpg"
-										alt="" class="rounded-circle user_img"> <span
-										class="online_icon offline"></span>
-								</div>
-								<div class="user_info">
-									<span>Sammy Sam</span>
-									<p>Sammy left 50 mins ago</p>
-								</div>
-							</div>
-						</li>
+							</li>
 						</ul>
 					</div>
 					<div class="card-footer"></div>
@@ -146,7 +150,7 @@
 									class="online_icon"></span>
 							</div>
 							<div class="user_info">
-								<span >Chat with Max</span>
+								<span>Chat with Max</span>
 								<p>1767 Messages</p>
 							</div>
 							<div class="video_cam">
@@ -171,8 +175,8 @@
 									src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
 									alt="" class="rounded-circle user_img_msg">
 							</div>
-							<div class="msg_cotainer" >
-								Hi, how are you Max? <span class="msg_time" >8:40 AM,
+							<div class="msg_cotainer">
+								Hi, how are you Max? <span class="msg_time">8:40 AM,
 									Today</span>
 							</div>
 						</div>
@@ -193,8 +197,8 @@
 									alt="" class="rounded-circle user_img_msg">
 							</div>
 							<div class="msg_cotainer">
-								I am good too, thank you for your KidzConnect social media web site <span
-									class="msg_time">9:00 AM, Today</span>
+								I am good too, thank you for your KidzConnect social media web
+								site <span class="msg_time">9:00 AM, Today</span>
 							</div>
 						</div>
 						<div class="d-flex justify-content-end mb-4">
@@ -240,18 +244,31 @@
 						</div>
 					</div>
 					<div class="card-footer">
-						<div class="input-group">
-							<div class="input-group-append">
-								<span class="input-group-text attach_btn"><i
-									class="fas fa-paperclip"></i></span>
+						<form id="message-form" th:action="@{/messages/send}"
+							method="post">
+
+							<div class="input-group">
+								<div class="input-group-append">
+									<span class="input-group-text attach_btn"><i
+										class="fas fa-paperclip"></i></span>
+								</div>
+								<textarea name="message" class="form-control type_msg"
+									placeholder="Type your message..."></textarea>
+								
+								<input type="hidden" name="receiverId" th:value="2" /> 
+
+								<div class="input-group-append">
+								
+									
+										<button type="submit" id="send-icon"
+											class="btn btn-primary send_btn">
+											<i class="fas fa-location-arrow"></i>
+										</button>
+
+								</div>
 							</div>
-							<textarea name="" class="form-control type_msg"
-								placeholder="Type your message..."></textarea>
-							<div class="input-group-append">
-								<span class="input-group-text send_btn"><i
-									class="fas fa-location-arrow"></i></span>
-							</div>
-						</div>
+						</form>
+
 					</div>
 				</div>
 			</div>
@@ -259,7 +276,7 @@
 	</div>
 
 	<!--Footer goes here-->
-    <div th:replace="footer :: footer"></div>
+	<div th:replace="footer :: footer"></div>
 
 
 
@@ -527,6 +544,38 @@ body, html {
 </style>
 
 	<script src="messages.js"></script>
+
+	<script>
+  const contacts = document.querySelectorAll('.contacts li');
+
+  contacts.forEach(contact => {
+    contact.addEventListener('click', () => {
+      // Remove active class from all contacts
+      contacts.forEach(c => c.classList.remove('active'));
+
+      // Add active class to the clicked contact
+      contact.classList.add('active');
+    });
+  });
+</script>
+
+	<!-- submit the form to create a new message by clicking the icon. Using JavaScript to listen for the click event on the icon and then trigger the form submission (using jQuery)
+ -->
+	<!-- <script>
+$(document).ready(function() {
+  $("#send-icon").click(function() {
+    $("#message-form").submit();
+  });
+});
+</script>
+ -->
+
+	<script>
+    function sendMessage() {
+        const selectedUserId = document.querySelector('.contacts li.active').getAttribute('data-receiver-id');
+        document.querySelector('input[name="receiverId"]').value = selectedUserId;
+    }
+</script>
 
 
 

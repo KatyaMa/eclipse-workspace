@@ -32,7 +32,7 @@ public class MessageService {
         User sender = userRepository.findById(senderId).orElseThrow(() -> new IllegalArgumentException("Invalid sender ID"));
         User receiver = userRepository.findById(receiverId).orElseThrow(() -> new IllegalArgumentException("Invalid receiver ID"));
         LocalDateTime now = LocalDateTime.now();
-        Message newMessage = new Message();
+        Message newMessage = new Message(sender, receiver, message);
         newMessage.setSender(sender);
         newMessage.setReceiver(receiver);
         newMessage.setCreatedAt(now);
@@ -41,17 +41,17 @@ public class MessageService {
     }
 
     
-    public Message saveMessage(Message message) {
+    public Message save(Message message) {
         return messageRepository.save(message);
     }
 
-    public List<Message> getMessagesBySenderAndReceiver(User sender, User receiver) {
-        return messageRepository.findBySenderAndReceiverOrderByCreatedAtDesc(sender, receiver);
-    }
-
-    public List<Message> getMessagesBySenderOrReceiver(User user) {
-        return messageRepository.findBySenderOrReceiverOrderByCreatedAtDesc(user, user);
-    }
+//    public List<Message> getMessagesBySenderAndReceiver(User sender, User receiver) {
+//        return messageRepository.findBySenderAndReceiverOrderByCreatedAtDesc(sender, receiver);
+//    }
+//
+//    public List<Message> getMessagesBySenderOrReceiver(User user) {
+//        return messageRepository.findBySenderOrReceiverOrderByCreatedAtDesc(user, user);
+//    }
     
     public void deleteMessage(Long messageId) {
         messageRepository.deleteById(messageId);
@@ -69,6 +69,7 @@ public class MessageService {
     public List<Message> getAllMessages() {
         return messageRepository.findAll();
     }
+
 
     
     
