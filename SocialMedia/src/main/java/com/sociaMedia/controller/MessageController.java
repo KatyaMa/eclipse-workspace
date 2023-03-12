@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.view.RedirectView;
 
 import com.sociaMedia.entity.Message;
 import com.sociaMedia.entity.Post;
@@ -77,9 +78,8 @@ public class MessageController {
 
     
     @PostMapping("/send")
-    public String sendMessage(@RequestParam("message") String message,
-//                                           @RequestParam("receiverId") Long receiverId,
-//                                           Authentication authentication) 
+    public RedirectView sendMessage(@RequestParam("message") String message,
+                                           @RequestParam("receiverId") Long receiverId,
                                            @AuthenticationPrincipal UserDetails userDetails, Model model)
                                            {
 
@@ -87,7 +87,6 @@ public class MessageController {
         User sender = userService.findByEmail(userDetails.getUsername());
 
         // get the receiver
-        Long receiverId = (long) 2;
         User receiver = userService.findById(receiverId);
 
 //        if (receiver == null) {
@@ -105,7 +104,8 @@ public class MessageController {
         messageRepository.save(newMessage);
         
         model.addAttribute("success", true);
-        return "redirect:/messages"; // redirect to the messages page after creating the message
+        return new RedirectView("/messages");
+//        return "redirect:/messages/"; // redirect to the messages page after creating the message
 	
         		
         

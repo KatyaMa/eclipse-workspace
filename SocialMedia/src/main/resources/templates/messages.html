@@ -63,7 +63,8 @@
 						<ul class="contacts">
 
 							<li th:class="${status?.index == 0 ? 'active' : ''}"
-								th:each="user : ${users}" data-receiver-id="${user.id}">
+								th:each="user : ${users}" 
+								th:onclick="@{'sendMessage(' + ${user.id} + ')'}">
 
 								<div class="d-flex bd-highlight">
 									<div class="img_cont">
@@ -255,11 +256,10 @@
 								<textarea name="message" class="form-control type_msg"
 									placeholder="Type your message..."></textarea>
 								
-								<input type="hidden" name="receiverId" th:value="2" /> 
+								<input type="hidden" name="receiverId"/> 
 
 								<div class="input-group-append">
 								
-									
 										<button type="submit" id="send-icon"
 											class="btn btn-primary send_btn">
 											<i class="fas fa-location-arrow"></i>
@@ -571,9 +571,9 @@ $(document).ready(function() {
  -->
 
 	<script>
-    function sendMessage() {
-        const selectedUserId = document.querySelector('.contacts li.active').getAttribute('data-receiver-id');
-        document.querySelector('input[name="receiverId"]').value = selectedUserId;
+    function sendMessage(userId) {
+//        const selectedUserId = document.querySelector('.contacts li.active').getAttribute('data-receiver-id');
+        document.querySelector('input[name="receiverId"]').value = userId;
     }
 </script>
 
