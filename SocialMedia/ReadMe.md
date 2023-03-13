@@ -1,4 +1,4 @@
-README file for 
+Welcome to my project!
 # Kids Social Media Project KidzConnect
 
 ## Introduction:
@@ -47,5 +47,15 @@ Each query method created in the repositories is tested.
 At least one method in each service class is tested.
 ## Conclusion:
 This Kids Social Media Project is a fully functional application designed for kids, which follows the given rubric and utilizes various technologies like Spring Boot, Thymeleaf, Hibernate, and JUnit for testing. The project structure, naming conventions, and database schema are properly defined, and the project includes all four CRUD operations, custom queries, and session management. The front-end development includes CSS, HTML, JavaScript, and a navigation section, making the project more user-friendly. 
+
+## Here's how to get in touch with me:
+
+Presentation: [Link to presentation](https://docs.google.com/presentation/d/1ZY8pHQuXkNkiIovZPwlPQ1t158xlK4nFf5Y6zWFfHo4/edit?usp=sharing)
+LinkedIn: [Link to LinkedIn](https://www.linkedin.com/in/ekaterina-machneva/)
+GitHub: Link to GitHub
+Phone: +1 (555) 555-5555
+Email: machneva115@gmail.com
+Feel free to reach out if you have any questions or comments about my project!
+
 
 https://docs.google.com/presentation/d/1ZY8pHQuXkNkiIovZPwlPQ1t158xlK4nFf5Y6zWFfHo4/edit?usp=sharing
