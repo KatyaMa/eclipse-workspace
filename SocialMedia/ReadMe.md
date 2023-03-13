@@ -50,7 +50,7 @@ This Kids Social Media Project is a fully functional application designed for ki
 
 * LinkedIn: [Link to LinkedIn](https://www.linkedin.com/in/ekaterina-machneva/)
 * GitHub: [Link to GitHub](https://github.com/KatyaMa)
-* Presentation: [Link to presentation](https://docs.google.com/presentation/d/1ZY8pHQuXkNkiIovZPwlPQ1t158xlK4nFf5Y6zWFfHo4/edit?usp=sharing)
+* Pavement Case Study Presentation: [Link to presentation](https://docs.google.com/presentation/d/1ZY8pHQuXkNkiIovZPwlPQ1t158xlK4nFf5Y6zWFfHo4/edit?usp=sharing)
 * Phone: +1 (202) 361-6920
 * Email: machneva115@gmail.com
 * Feel free to reach out if you have any questions or comments about my project!
