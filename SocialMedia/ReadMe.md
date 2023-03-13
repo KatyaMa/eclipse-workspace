@@ -1,4 +1,4 @@
-## Welcome to my project!
+Welcome to my project!
 # Kids Social Media - KidzConnect
 
 ## Introduction:
@@ -57,3 +57,6 @@ This Kids Social Media Project is a fully functional application designed for ki
 * Phone: +1 (202) 361-6920
 * Email: machneva115@gmail.com
 * Feel free to reach out if you have any questions or comments about my project!
+
+<img width="1440" alt="chat" src="https://user-images.githubusercontent.com/71144178/224792466-c13a8d90-4724-441c-816c-b602d590c65b.png">
+<img width="719" alt="messages" src="https://user-images.githubusercontent.com/71144178/224792473-dd37be4c-4fb9-4101-a42c-57ba8843e5d8.png">
