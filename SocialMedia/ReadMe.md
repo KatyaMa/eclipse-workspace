@@ -25,6 +25,7 @@ Custom queries are included.
 Hibernate is used directly or through Spring Data JPA.
 The project includes examples for all four CRUD operations (Create, Read, Update, and Delete).
 Front-end Development:
+![schema](https://user-images.githubusercontent.com/71144178/224791885-572fb3de-53df-4277-9d32-97813a976cec.png)
 
 ## CSS is used to style the web pages, with an external CSS stylesheet included.
 The project includes six different views/pages.
@@ -50,9 +51,9 @@ This Kids Social Media Project is a fully functional application designed for ki
 
 ## Here's how to get in touch with me:
 
-* Presentation: [Link to presentation](https://docs.google.com/presentation/d/1ZY8pHQuXkNkiIovZPwlPQ1t158xlK4nFf5Y6zWFfHo4/edit?usp=sharing)
 * LinkedIn: [Link to LinkedIn](https://www.linkedin.com/in/ekaterina-machneva/)
 * GitHub: [Link to GitHub](https://github.com/KatyaMa)
+* Presentation: [Link to presentation](https://docs.google.com/presentation/d/1ZY8pHQuXkNkiIovZPwlPQ1t158xlK4nFf5Y6zWFfHo4/edit?usp=sharing)
 * Phone: +1 (202) 361-6920
 * Email: machneva115@gmail.com
-Feel free to reach out if you have any questions or comments about my project!
+* Feel free to reach out if you have any questions or comments about my project!
