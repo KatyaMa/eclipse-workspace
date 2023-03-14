@@ -44,9 +44,11 @@
 						src="https://bootdey.com/img/Content/flores-amarillas-wallpaper.jpeg"
 						alt="">
 				</div>
-				<div class="profile-info-brief p-3">
+				
+<!-- 				src="https://bootdey.com/img/Content/avatar/avatar6.png"
+ -->				<div class="profile-info-brief p-3">
 					<img class="img-fluid user-profile-avatar"
-						src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="">
+						th:src="${user.profilePicture}"  alt="">
 					<div class="text-center">
 						<h5 class="text-uppercase mb-4" style="color:#7F7FD5;" th:text="${user.firstName +' ' + user.lastName}" >Max Remy</h5>
 						<p class="text-muted fz-base">Hi there, I'm
@@ -160,7 +162,7 @@
 							<div class="stream-post" th:each="post : ${posts}" th:reverse>
 								<div class="sp-author">
 									<a href="#" class="sp-author-avatar"><img
-										src="https://bootdey.com/img/Content/avatar/avatar6.png"
+										th:src="${post.user.profilePicture}"
 										alt=""></a>
 									<h6 class="sp-author-name">
 										<a href="#" th:text="${post.user.firstName}" th:if="${post != null}"></a>
@@ -176,7 +178,7 @@
 							<div class="stream-post">
 								<div class="sp-author">
 									<a href="#" class="sp-author-avatar"><img
-										src="https://bootdey.com/img/Content/avatar/avatar6.png"
+										src="https://static.turbosquid.com/Preview/001214/650/2V/boy-cartoon-3D-model_D.jpg"
 										alt=""></a>
 									<h6 class="sp-author-name">
 										<a href="#">Anya Mac</a>
@@ -184,12 +186,7 @@
 								</div>
 								<div class="sp-content">
 									<div class="sp-info">posted 1h ago</div>
-									<p class="sp-paragraph mb-0">Auk Soldanella plainscraft
-										acetonylidene wolfishness irrecognizant Candolleaceae
-										provision Marsipobranchii arpen Paleoanthropus supersecular
-										inidoneous autoplagiarism palmcrist occamy equestrianism
-										periodontoclasia mucedin overchannel goelism decapsulation
-										pourer zira</p>
+									<p class="sp-paragraph mb-0">If you haven't played Minecraft yet, I highly recommend it. And if you have, let me know what your favorite thing to build is in the comments below!</p>
 								</div>
 
 							</div>
@@ -205,12 +202,9 @@
 								</div>
 								<div class="sp-content">
 									<div class="sp-info">posted 2h ago</div>
-									<p class="sp-paragraph mb-0">Auk Soldanella plainscraft
-										acetonylidene wolfishness irrecognizant Candolleaceae
-										provision Marsipobranchii arpen Paleoanthropus supersecular
-										inidoneous autoplagiarism palmcrist occamy equestrianism
-										periodontoclasia mucedin overchannel goelism decapsulation
-										pourer zira</p>
+									<p class="sp-paragraph mb-0">I love how you can build anything you want in Minecraft, from houses to roller coasters. The creativity is endless! Plus, the game has so many different modes, like survival and creative, so you can play however you want.
+
+</p>
 								</div>
 
 							</div>
@@ -226,12 +220,9 @@
 								</div>
 								<div class="sp-content">
 									<div class="sp-info">posted 1h ago</div>
-									<p class="sp-paragraph mb-0">Auk Soldanella plainscraft
-										acetonylidene wolfishness irrecognizant Candolleaceae
-										provision Marsipobranchii arpen Paleoanthropus supersecular
-										inidoneous autoplagiarism palmcrist occamy equestrianism
-										periodontoclasia mucedin overchannel goelism decapsulation
-										pourer zira</p>
+									<p class="sp-paragraph mb-0">Hi there, I'm Max. I'm here to introduce you to the wonderful world of gaming! Just like you, I love to play games and have fun.
+
+</p>
 								</div>
 
 							</div>
@@ -247,13 +238,7 @@
 								</div>
 								<div class="sp-content">
 									<div class="sp-info">posted 2 days ago</div>
-									<p class="sp-paragraph">Auk Soldanella plainscraft
-										acetonylidene wolfishness irrecognizant Candolleaceae
-										provision Marsipobranchii arpen Paleoanthropus supersecular
-										inidoneous</p>
-									<p class="sp-paragraph">autoplagiarism palmcrist occamy
-										equestrianism periodontoclasia mucedin overchannel goelism
-										decapsulation pourer zira</p>
+									<p class="sp-paragraph">Hey everyone! I'm Art. I just wanted to share my love for this awesome game called "Minecraft". I've been playing it for a while now and it's honestly one of the best games out there.</p>
 								</div>
 							</div>
 						</div>

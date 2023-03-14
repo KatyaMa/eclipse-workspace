@@ -5985,3 +5985,387 @@ java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 09:17:51.207
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 09:17:57.308
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 09:18:10.539
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 09:18:19.541
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:27:43.081
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:28:03.903
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:28:05.267
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:28:13.453
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:28:21.113
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:28:58.108
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:29:15.864
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:30:51.708
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-03-14 10:31:05.082
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:31:29.643
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:31:36.351
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:31:44.261
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:31:54.809
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:31:58.868
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:32:00.759
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:32:03.859
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:32:04.981
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:32:12.241
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:32:17.864
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:32:20.232
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:32:28.252
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:32:35.310
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:32:47.356
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 10:32:58.116
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 11:41:43.809
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 11:42:47.071
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 11:44:55.110
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2023-03-14 11:49:15.333
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.testehan.translationplugin.util.Translate.prop" is null
+	at com.testehan.translationplugin.util.Translate.translateSeparatedWords(Translate.java:47)
+	at com.testehan.translationplugin.util.Translate.getTranslatedText(Translate.java:39)
+	at com.testehan.translationplugin.main.LanguageHover.getHoverInfo(LanguageHover.java:27)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:169)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
