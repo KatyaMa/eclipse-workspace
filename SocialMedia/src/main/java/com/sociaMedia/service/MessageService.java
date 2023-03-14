@@ -12,6 +12,8 @@ import com.sociaMedia.repositoryDAO.MessageRepository;
 import com.sociaMedia.repositoryDAO.UserRepository;
 
 import jakarta.persistence.TypedQuery;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
 
 @Service
 public class MessageService {
@@ -22,11 +24,13 @@ public class MessageService {
 
     @Autowired
     private UserRepository userRepository;
+	private EntityManagerFactory entityManagerFactory;
+	private EntityManager entityManager;
 
-    @Autowired
     public MessageService(MessageRepository messageRepository) {
         this.messageRepository = messageRepository;
     }
+    
 
     public void sendMessage(Long senderId, Long receiverId, String message) {
         User sender = userRepository.findById(senderId).orElseThrow(() -> new IllegalArgumentException("Invalid sender ID"));
@@ -83,13 +87,13 @@ public class MessageService {
 //		return query.getResultList();
 //	}
 //
-//	public List<Message> getMessagesBySenderAndReceiver(User sender, User receiver) {
-//		TypedQuery<Message> query = entityManager.createQuery(
-//				"SELECT m FROM Message m WHERE m.sender = :sender AND m.receiver = :receiver", Message.class);
-//		query.setParameter("sender", sender);
-//		query.setParameter("receiver", receiver);
-//		return query.getResultList();
-//	}
+	public List<Message> getMessagesBySenderAndReceiver(User sender, User receiver) {
+		TypedQuery<Message> query = entityManager.createQuery(
+				"SELECT m FROM Message m WHERE m.sender = :sender AND m.receiver = :receiver", Message.class);
+		query.setParameter("sender", sender);
+		query.setParameter("receiver", receiver);
+		return query.getResultList();
+	}
 //
 //	public void deleteMessage(Long id) {
 //		entityManager.getTransaction().begin();

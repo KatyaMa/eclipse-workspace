@@ -43,8 +43,6 @@ public class SocialMediaService {
 	private FriendDao friendDao;
 	@Autowired
 	private LikeDao likeDao;
-	@Autowired
-	private PostDao postDao;
 
 	// methods use the DAO classes to perform CRUD operations on the database
 
@@ -223,27 +221,7 @@ public class SocialMediaService {
 		likeDao.removeLike(like);
 	}
 
-	// Post methods
 
-	public void addPost(Post post) {
-		postDao.save(post);
-	}
-
-	public Post getPostById(Long id) {
-		return postDao.getById(id);
-	}
-
-	public List<Post> getAllPosts() {
-		return postDao.getAll();
-	}
-
-	public void updatePost(Post post) {
-		postDao.update(post);
-	}
-
-	public void deletePost(Post post) {
-		postDao.delete(post);
-	}
 
 
 // ??????????? other DAOs ????

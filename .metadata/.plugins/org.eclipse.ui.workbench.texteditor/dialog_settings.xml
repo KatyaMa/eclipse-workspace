@@ -6,25 +6,26 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="th:"/>
+		<item key="selection" value="junit"/>
 		<list key="findhistory">
-			<item value="th:"/>
-			<item value="th"/>
-			<item value="receiver"/>
-			<item value="reciever"/>
-			<item value="sender"/>
-			<item value="UserServiceImpl"/>
-			<item value="userServiceImpl"/>
-			<item value="UserService"/>
-			<item value="thymeleaf-layout-dialect"/>
-			<item value="jdbc&lt;footer id=&quot;footer&quot; class=&quot;footer py-4  border-top&quot;&gt;&#x0A;    &lt;p class=&quot;footer_p&quot;&gt;&lt;a href=&quot;index.html&quot;&gt; QUIZ&lt;/a&gt; | &lt;a href=&quot;chat.html&quot;&gt;CHAT&lt;/a&gt; | &lt;a href=&quot;aboutMe.html&quot;&gt;ABOUT&#x0A;            ME&lt;/a&gt; | &lt;a href=&quot;contact.html&quot;&gt;CONTACT&lt;/a&gt; | LOGIN&lt;/p&gt;&#x0A;    &lt;p&gt;Copyright © 2023. All Rights Reserved By &lt;a style=&quot;color: rgb(118, 210, 252)&quot;&#x0A;            href=&quot;https://github.com/KatyaMa/SBA&quot;&gt;Ekaterina Machneva&lt;/a&gt;&lt;/p&gt;&#x0A;&lt;/footer&gt;"/>
-			<item value="jdbc"/>
-			<item value="model.addAttribute"/>
-			<item value="new-post"/>
-			<item value="post-field"/>
-			<item value="post"/>
+			<item value="junit"/>
+			<item value="mockito-core"/>
+			<item value="MockMvcBuilders"/>
+			<item value="PasswordEncoder"/>
+			<item value="jquery-3.3.1.js&quot;"/>
+			<item value="/css&quot; href=&quot;style.css&quot;&gt;"/>
+			<item value="style.css"/>
+			<item value="atic/email-decode.min.js&quot;&gt;"/>
+			<item value="3.3.7/js/bootstrap.min.js"/>
+			<item value="/3.2.1/jquery.min.js/"/>
+			<item value="&lt;script type=&quot;text/javascript"/>
+			<item value="&lt;script data-cfasync=&quot;false"/>
+			<item value="font-awesome.min.css&quot;"/>
+			<item value="&lt;script src=&quot;https://netdna.boot"/>
+			<item value=" &lt;script src=&quot;https://code.jquery.com/jquery"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
 			<item value="userService"/>
 			<item value="UserService"/>
 			<item value="user1"/>
@@ -39,12 +40,11 @@
 			<item value="item"/>
 			<item value="c4"/>
 			<item value="c3"/>
-			<item value="c2"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="2056"/>
-		<item key="DIALOG_Y_ORIGIN" value="262"/>
+		<item key="DIALOG_X_ORIGIN" value="2538"/>
+		<item key="DIALOG_Y_ORIGIN" value="61"/>
 		<item key="DIALOG_WIDTH" value="336"/>
 		<item key="DIALOG_HEIGHT" value="402"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>

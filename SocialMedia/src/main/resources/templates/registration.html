@@ -10,7 +10,7 @@
 
 <title>User Registration</title>
 </head>
-<body>
+<body style="background:linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5)">
   <nav class="navbar navbar-inverse navbar-fixed-top">
      <div class="container">
         <div class="navbar-header">
@@ -30,13 +30,13 @@
   <br>
   <br>
 
-  <div class="container">
+  <div class="container" th:style="'background:url('+ @{/background.jpg} +'); background-repeat: no-repeat, repeat; background-size: cover; '">
      <div class="row">
         <div class="col-md-6 col-md-offset-3">
 
            <div th:if="${param.success}">
               <div class="alert alert-info">You've successfully registered
-                 to our awesome app!</div>
+                 to KidzConnect app!</div>
            </div>
 
            <h1>Registration</h1>

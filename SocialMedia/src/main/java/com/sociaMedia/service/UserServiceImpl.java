@@ -33,6 +33,11 @@ public class UserServiceImpl implements UserService {
        return userRepository.findByEmail(email);
    }
 
+   @Autowired
+   public void setUserRepository(UserRepository userRepository) {
+       this.userRepository = userRepository;
+   }
+
    public User save(UserRegistrationDto registration){
        User user = new User();
        user.setFirstName(registration.getFirstName());

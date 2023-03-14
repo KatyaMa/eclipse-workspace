@@ -24,26 +24,24 @@
 <link
 	href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
 	rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" type="text/css" href="static/style.css">
 
 <script
 	src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script
 	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- -->
-<!--  <script>
-	$(function() {
-		$("#header").load("header.html");
-		$("#footer").load("footer.html");
-	});
-</script>
- -->
 </head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
 
 
 <body>
 	<!-- Header goes here -->
-	<div th:replace="header :: header"></div>
+	<div th:replace="~{header :: header}"></div>
 
 	<div class="container-fluid h-100">
 		<div class="row justify-content-center h-100">
@@ -63,10 +61,11 @@
 						<ul class="contacts">
 
 							<li th:class="${status?.index == 0 ? 'active' : ''}"
-								th:each="user : ${users}" 
+								th:each="user : ${users}"
 								th:onclick="@{'sendMessage(' + ${user.id} + ')'}">
-
-								<div class="d-flex bd-highlight">
+<!--  <a th:href="@{/messages/{receiverId}(receiverId=${user.id})}">
+ -->							
+ 								<div class="d-flex bd-highlight">
 									<div class="img_cont">
 										<img
 											src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
@@ -78,7 +77,8 @@
 										<p th:text="${user.firstName} + ' is online'"></p>
 									</div>
 								</div>
-							</li>
+<!-- 								</a>
+ -->							</li>
 							<li>
 								<div class="d-flex bd-highlight">
 									<div class="img_cont">
@@ -104,20 +104,6 @@
 									<div class="user_info">
 										<span>Art Mac</span>
 										<p>Art is online</p>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="d-flex bd-highlight">
-									<div class="img_cont">
-										<img
-											src="http://profilepicturesdp.com/wp-content/uploads/2018/07/sweet-girl-profile-pictures-9.jpg"
-											alt="" class="rounded-circle user_img"> <span
-											class="online_icon offline"></span>
-									</div>
-									<div class="user_info">
-										<span>Anya Anya</span>
-										<p>Anya left 30 mins ago</p>
 									</div>
 								</div>
 							</li>
@@ -151,8 +137,10 @@
 									class="online_icon"></span>
 							</div>
 							<div class="user_info">
-								<span>Chat with Max</span>
-								<p>1767 Messages</p>
+								<span >Chat with Max</span>
+<!-- 							<span th:text="'Chat with ' + ${user.firstName} + ">Chat with Max</span>
+ -->
+ 								<p>1767 Messages</p>
 							</div>
 							<div class="video_cam">
 								<span><i class="fas fa-video"></i></span> <span><i
@@ -169,29 +157,29 @@
 							</ul>
 						</div>
 					</div>
-					<div class="card-body msg_card_body">
+					<div class="card-body msg_card_body" th:each="message : ${messages}">
 						<div class="d-flex justify-content-start mb-4">
 							<div class="img_cont_msg">
 								<img
 									src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
 									alt="" class="rounded-circle user_img_msg">
 							</div>
-							<div class="msg_cotainer">
-								Hi, how are you Max? <span class="msg_time">8:40 AM,
+							<div class="msg_cotainer" th:text="${message.message}" th:if="${message != null}">
+								Hi, how are you Max? <span class="msg_time" th:text="${#temporals.format(message.createdAt, 'dd-MM-yyyy HH:mm:ss')}" th:if="${message != null}">8:40 AM,
 									Today</span>
 							</div>
 						</div>
 						<div class="d-flex justify-content-end mb-4">
 							<div class="msg_cotainer_send">
 								Hi Ekaterina i am good tnx how about you? <span
-									class="msg_time_send">8:55 AM, Today</span>
+									class="msg_time_send" th:text="${#temporals.format(message.createdAt, 'dd-MM-yyyy HH:mm:ss')}" th:if="${message != null}">8:55 AM, Today</span>
 							</div>
 							<div class="img_cont_msg">
 								<img src="https://bootdey.com/img/Content/avatar/avatar6.png"
 									alt="" class="rounded-circle user_img_msg">
 							</div>
 						</div>
-						<div class="d-flex justify-content-start mb-4">
+<!-- 						<div class="d-flex justify-content-start mb-4">
 							<div class="img_cont_msg">
 								<img
 									src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
@@ -243,7 +231,8 @@
 								Bye, see you <span class="msg_time">9:12 AM, Today</span>
 							</div>
 						</div>
-					</div>
+ -->
+ 					</div>
 					<div class="card-footer">
 						<form id="message-form" th:action="@{/messages/send}"
 							method="post">
@@ -255,15 +244,15 @@
 								</div>
 								<textarea name="message" class="form-control type_msg"
 									placeholder="Type your message..."></textarea>
-								
-								<input type="hidden" name="receiverId"/> 
+
+								<input type="hidden" name="receiverId" />
 
 								<div class="input-group-append">
-								
-										<button type="submit" id="send-icon"
-											class="btn btn-primary send_btn">
-											<i class="fas fa-location-arrow"></i>
-										</button>
+
+									<button type="submit" id="send-icon"
+										class="btn btn-primary send_btn">
+										<i class="fas fa-location-arrow"></i>
+									</button>
 
 								</div>
 							</div>
@@ -276,7 +265,7 @@
 	</div>
 
 	<!--Footer goes here-->
-	<div th:replace="footer :: footer"></div>
+	<div th:replace="~{footer :: footer}"></div>
 
 
 
@@ -555,25 +544,22 @@ body, html {
 
       // Add active class to the clicked contact
       contact.classList.add('active');
+      
+      // Set receiverId input value to the id of the clicked user
+     // receiverIdInput.value = contact.getAttribute('data-user-id');
+
+      // Reload page to show messages between the two users
+      // location.reload();
+
     });
   });
 </script>
 
-	<!-- submit the form to create a new message by clicking the icon. Using JavaScript to listen for the click event on the icon and then trigger the form submission (using jQuery)
- -->
-	<!-- <script>
-$(document).ready(function() {
-  $("#send-icon").click(function() {
-    $("#message-form").submit();
-  });
-});
-</script>
- -->
 
 	<script>
     function sendMessage(userId) {
-//        const selectedUserId = document.querySelector('.contacts li.active').getAttribute('data-receiver-id');
         document.querySelector('input[name="receiverId"]').value = userId;
+        // getChat(userId);
     }
 </script>
 

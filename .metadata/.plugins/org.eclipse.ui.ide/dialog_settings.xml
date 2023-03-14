@@ -43,8 +43,8 @@
 		</list>
 	</section>
 	<section name="SaveAsDialogSettings">
-		<item key="DIALOG_X_ORIGIN" value="1021"/>
-		<item key="DIALOG_Y_ORIGIN" value="267"/>
+		<item key="DIALOG_X_ORIGIN" value="620"/>
+		<item key="DIALOG_Y_ORIGIN" value="319"/>
 		<item key="DIALOG_WIDTH" value="586"/>
 		<item key="DIALOG_HEIGHT" value="528"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
