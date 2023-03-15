@@ -35,7 +35,7 @@ The project includes at least two repositories and two service classes/interface
 The project includes at least two ways to create a managed bean/object.
 Dependency injection is implemented with appropriate use of the @Autowired annotation.
 The project includes an example of session management and transaction and request/response logging.
-Web Services (JAX-WS, JAX-RS, or Spring REST) are implemented.
+Web Services Spring REST are implemented.
 Sign-up and login functionality is included with hashing passwords using bcrypt.
 
 ## Unit Testing:
