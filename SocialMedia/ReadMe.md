@@ -35,7 +35,7 @@ The project includes at least two repositories and two service classes/interface
 The project includes at least two ways to create a managed bean/object.
 Dependency injection is implemented with appropriate use of the @Autowired annotation.
 The project includes an example of session management and transaction and request/response logging.
-Web Services (JAX-WS, JAX-RS, or Spring REST) are implemented.
+Web Services Spring REST are implemented.
 Sign-up and login functionality is included with hashing passwords using bcrypt.
 
 ## Unit Testing:
@@ -50,7 +50,7 @@ This Kids Social Media Project is a fully functional application designed for ki
 
 * LinkedIn: [Link to LinkedIn](https://www.linkedin.com/in/ekaterina-machneva/)
 * GitHub: [Link to GitHub](https://github.com/KatyaMa)
-* Pavement Case Study Presentation: [Link to presentation](https://docs.google.com/presentation/d/1ZY8pHQuXkNkiIovZPwlPQ1t158xlK4nFf5Y6zWFfHo4/edit?usp=sharing)
+* Case Study Presentation: [Link to presentation](https://docs.google.com/presentation/d/1ZY8pHQuXkNkiIovZPwlPQ1t158xlK4nFf5Y6zWFfHo4/edit?usp=sharing)
 * Phone: +1 (202) 361-6920
 * Email: machneva115@gmail.com
 * Feel free to reach out if you have any questions or comments about my project!
