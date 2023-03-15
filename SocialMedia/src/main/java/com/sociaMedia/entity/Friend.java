@@ -12,23 +12,24 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "friends")    // annotations to map to the corresponding database table "friends"
-public class Friend {       // Friend: a class to represent the relationship between two users who are friends
+@Table(name = "friends") // annotations to map to the corresponding database table "friends"
+public class Friend { // Friend: a class to represent the relationship between two users who are
+						// friends
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long friendshipId;
-    
-    @ManyToOne
-    @JoinColumn(name = "user_id_1", nullable = false)  // "user1" is required field and cannot be null
-    private User user1;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id_2", nullable = false)  // "user2" is required field and cannot be null
-    private User user2;
+	@ManyToOne
+	@JoinColumn(name = "user_id_1", nullable = false) // "user1" is required field and cannot be null
+	private User user1;
 
-    @Column(name = "created_at", nullable = false)  // "createdAt" is required field and cannot be null
-    private LocalDateTime createdAt;
+	@ManyToOne
+	@JoinColumn(name = "user_id_2", nullable = false) // "user2" is required field and cannot be null
+	private User user2;
+
+	@Column(name = "created_at", nullable = false) // "createdAt" is required field and cannot be null
+	private LocalDateTime createdAt;
 
 	public Long getFriendshipId() {
 		return friendshipId;
@@ -62,8 +63,7 @@ public class Friend {       // Friend: a class to represent the relationship bet
 		this.createdAt = createdAt;
 	}
 
-    //	private String status;
-    //	private String notes;
-    
-    
+	// private String status;
+	// private String notes;
+
 }

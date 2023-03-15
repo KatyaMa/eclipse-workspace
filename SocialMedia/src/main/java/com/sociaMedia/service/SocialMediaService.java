@@ -94,35 +94,37 @@ public class SocialMediaService {
 
 	// Message methods
 	public List<Message> getMessagesByUser(User user) {
-	    EntityManager em = emf.createEntityManager();
-	    List<Message> messages = null;
-	    try {
-	        em.getTransaction().begin();
-	        TypedQuery<Message> query = em.createQuery("SELECT m FROM Message m WHERE m.receiver = :user OR m.sender = :user ORDER BY m.createdAt DESC", Message.class);
-	        query.setParameter("user", user);
-	        messages = query.getResultList();
-	        em.getTransaction().commit();
-	    } finally {
-	        em.close();
-	    }
-	    return messages;
+		EntityManager em = emf.createEntityManager();
+		List<Message> messages = null;
+		try {
+			em.getTransaction().begin();
+			TypedQuery<Message> query = em.createQuery(
+					"SELECT m FROM Message m WHERE m.receiver = :user OR m.sender = :user ORDER BY m.createdAt DESC",
+					Message.class);
+			query.setParameter("user", user);
+			messages = query.getResultList();
+			em.getTransaction().commit();
+		} finally {
+			em.close();
+		}
+		return messages;
 	}
 
 	public Message postMessage(User sender, User receiver, String message) {
-	    EntityManager em = emf.createEntityManager();
-	    Message newMessage = new Message(receiver, sender, message);
-	    newMessage.setSender(sender);
-	    newMessage.setReceiver(receiver);
-	    newMessage.setCreatedAt(LocalDateTime.now());
-	    newMessage.setMessage(message);
-	    try {
-	        em.getTransaction().begin();
-	        em.persist(newMessage);
-	        em.getTransaction().commit();
-	    } finally {
-	        em.close();
-	    }
-	    return newMessage;
+		EntityManager em = emf.createEntityManager();
+		Message newMessage = new Message(receiver, sender, message);
+		newMessage.setSender(sender);
+		newMessage.setReceiver(receiver);
+		newMessage.setCreatedAt(LocalDateTime.now());
+		newMessage.setMessage(message);
+		try {
+			em.getTransaction().begin();
+			em.persist(newMessage);
+			em.getTransaction().commit();
+		} finally {
+			em.close();
+		}
+		return newMessage;
 	}
 
 	// Method to delete a message
@@ -138,7 +140,6 @@ public class SocialMediaService {
 		// Delete message from database
 		messageDao.deleteMessage(messageId);
 	}
-
 
 	// "Comment" methods
 	// These methods include input validation to ensure that the message or comment
@@ -221,10 +222,6 @@ public class SocialMediaService {
 		likeDao.removeLike(like);
 	}
 
-
-
-
-// ??????????? other DAOs ????
 	public void close() {
 		groupDao.close();
 		messageDao.close();

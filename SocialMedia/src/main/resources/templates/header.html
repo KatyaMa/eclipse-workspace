@@ -1,42 +1,43 @@
-<header id="header" >
-    <nav class="navbar navbar-expand-lg py-4 fixed-top border-bottom" style="background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
-" >
-        <div class="container-fluid" >
-            <a style="color:#7F7FD5; font-size: 30px;" class="navbar-brand" th:href="@{/}">KidzConnect</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-<!--                     <li class="nav-item">
+<header id="header">
+	<nav class="navbar navbar-expand-lg py-4 fixed-top border-bottom"
+		style="background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);">
+		<div class="container-fluid">
+			<a style="color: #7F7FD5; font-size: 30px;" class="navbar-brand"
+				th:href="@{/}">KidzConnect</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<!--                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html" style="color: white;">QUIZ</a>
                     </li>
- -->                     <li class="nav-item">
-                        <a class="nav-link" th:href="@{/}" style="color: white;">CHAT</a>
-                    </li>
-                   <li class="nav-item">
-                        <a class="nav-link" th:href="@{/about}" style="color: white;">ABOUT</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" th:href="@{/contact}" style="color: white;">CONTACT</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" th:href="@{/messages}" style="color: white;">MESSAGES  </a>
-                    </li>
-                    
-                    <li class="nav-item" sec:authorize="isAuthenticated()">
-                        <a  style="color:white; " class="nav-link" th:href="@{/logout}">Logout</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button style="color: white;" class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
+ -->
+					<li class="nav-item"><a class="nav-link" th:href="@{/}"
+						style="color: white;">CHAT</a></li>
+					<li class="nav-item"><a class="nav-link" th:href="@{/about}"
+						style="color: white;">ABOUT</a></li>
+
+					<li class="nav-item"><a class="nav-link" th:href="@{/contact}"
+						style="color: white;">CONTACT</a></li>
+
+					<li class="nav-item"><a class="nav-link"
+						th:href="@{/messages}" style="color: white;">MESSAGES </a></li>
+
+					<li class="nav-item" sec:authorize="isAuthenticated()"><a
+						style="color: white;" class="nav-link" th:href="@{/logout}">Logout</a>
+					</li>
+				</ul>
+				<form class="d-flex">
+					<input class="form-control me-2" type="search" placeholder="Search"
+						aria-label="Search">
+					<button style="color: white;" class="btn btn-outline-success"
+						type="submit">Search</button>
+				</form>
+			</div>
+		</div>
+	</nav>
 </header>

@@ -24,18 +24,22 @@
 <link
 	href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
 	rel="stylesheet" id="bootstrap-css">
-  <link rel="stylesheet" type="text/css" href="static/style.css">
-
+<!-- <link rel="stylesheet" type="text/css" href="static/style.css">
+ -->
 <script
 	src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script
 	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
 
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous">
     </script>
 
 
@@ -62,23 +66,25 @@
 
 							<li th:class="${status?.index == 0 ? 'active' : ''}"
 								th:each="user : ${users}"
-								th:onclick="@{'sendMessage(' + ${user.id} + ')'}">
-<!--  <a th:href="@{/messages/{receiverId}(receiverId=${user.id})}">
- -->							
- 								<div class="d-flex bd-highlight">
+								th:onclick="@{'sendMessage(' + ${user.id} + ')'}"
+								>
+
+<a th:href="@{/messages(receiverId=${user.id})}">
+
+								<div class="d-flex bd-highlight">
 									<div class="img_cont">
-										<img
-											th:src="${user.profilePicture}"
-											alt="" class="rounded-circle user_img"> <span
+										<img th:src="${user.profilePicture}" alt=""
+											class="rounded-circle user_img"> <span
 											class="online_icon"></span>
 									</div>
 									<div class="user_info">
 										<span th:text="${user.firstName} + ' ' + ${user.lastName}"></span>
 										<p th:text="${user.firstName} + ' is online'"></p>
 									</div>
-								</div>
-<!-- 								</a>
- -->							</li>
+								</div> 								
+</a>
+
+							</li>
 							<li>
 								<div class="d-flex bd-highlight">
 									<div class="img_cont">
@@ -126,7 +132,7 @@
 					<div class="card-footer"></div>
 				</div>
 			</div>
-			<div class="col-md-8 col-xl-6 chat">
+			<div class="col-md-8 col-xl-6 chat" th:if="${receiver != null}">
 				<div class="card">
 					<div class="card-header msg_head">
 						<div class="d-flex bd-highlight">
@@ -137,10 +143,8 @@
 									class="online_icon"></span>
 							</div>
 							<div class="user_info">
-								<span >Chat with Max</span>
-<!-- 							<span th:text="'Chat with ' + ${user.firstName} + ">Chat with Max</span>
- -->
- 								<p>1767 Messages</p>
+								<span>Chat with <span th:text="${receiver.firstName}"></span></span>
+								<p>1767 Messages</p>
 							</div>
 							<div class="video_cam">
 								<span><i class="fas fa-video"></i></span> <span><i
@@ -157,19 +161,42 @@
 							</ul>
 						</div>
 					</div>
-					<div class="card-body msg_card_body" th:each="message : ${messages}">
-						<div class="d-flex justify-content-start mb-4">
+					<div class="card-body msg_card_body">
+
+
+						<!-- for testing messages. need to be deleted-->
+						<!--  					<ul class="list-unstyled">
+							<li th:each="message : ${messages}"
+							
+								th:class="${message.sender.id == user.id ? 'd-flex justify-content-end mb-4' : 'd-flex justify-content-start mb-4'}">
+								<div
+									th:class="${message.sender.id == user.id ? 'msg_cotainer_send' : 'msg_cotainer'}">
+									<span th:text="${message.message}"></span> 
+									<span th:text="${message.createdAt}"></span>
+								</div>
+							</li>
+						</ul>
+ -->
+
+						<div class="d-flex justify-content-start mb-4"
+							th:each="message : ${messages}">
 							<div class="img_cont_msg">
 								<img
 									src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
 									alt="" class="rounded-circle user_img_msg">
 							</div>
-							<div class="msg_cotainer" th:text="${message.message}" th:if="${message != null}">
-								Hi, how are you Max? <span class="msg_time" th:text="${#temporals.format(message.createdAt, 'dd-MM-yyyy HH:mm:ss')}" th:if="${message != null}">8:40 AM,
-									Today</span>
+
+							<div class="msg_cotainer" th:text="${message.message}"
+								th:if="${message != null}">
+								
+							</div>
+								
+							<div class="msg_cotainer"
+								th:text="${#temporals.format(message.createdAt, 'dd-MM-yyyy HH:mm:ss')}"
+								th:if="${message != null}">
 							</div>
 						</div>
-						<div class="d-flex justify-content-end mb-4">
+						<!-- 						<div class="d-flex justify-content-end mb-4">
 							<div class="msg_cotainer_send">
 								Hi Ekaterina i am good tnx how about you? <span
 									class="msg_time_send" th:text="${#temporals.format(message.createdAt, 'dd-MM-yyyy HH:mm:ss')}" th:if="${message != null}">8:55 AM, Today</span>
@@ -179,7 +206,11 @@
 									alt="" class="rounded-circle user_img_msg">
 							</div>
 						</div>
-<!-- 						<div class="d-flex justify-content-start mb-4">
+ -->
+
+
+
+						<!-- 						<div class="d-flex justify-content-start mb-4">
 							<div class="img_cont_msg">
 								<img
 									src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
@@ -232,7 +263,7 @@
 							</div>
 						</div>
  -->
- 					</div>
+					</div>
 					<div class="card-footer">
 						<form id="message-form" th:action="@{/messages/send}"
 							method="post">
@@ -245,7 +276,7 @@
 								<textarea name="message" class="form-control type_msg"
 									placeholder="Type your message..."></textarea>
 
-								<input type="hidden" name="receiverId" />
+								<input type="hidden" name="receiverId" th:value="${receiver.Id}"/>
 
 								<div class="input-group-append">
 

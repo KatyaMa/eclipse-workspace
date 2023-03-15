@@ -12,23 +12,23 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "likes")     // annotations to map to the corresponding database table "likes"
-public class Like {		   // Like: a class to represent when a user likes a post
-    
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    
-    @ManyToOne   // relationships with User
-    @JoinColumn(name = "user_id", nullable = false)  // "user_id" is required field and cannot be null
-    private User user;
-    
-    @ManyToOne   // relationships with Post
-    @JoinColumn(name = "post_id", nullable = false)  // "post_id" is required field and cannot be null
-    private Post post;
-    
-    @Column(name = "created_at", nullable = false)  // "created_at" is required field and cannot be null
-    private LocalDateTime createdAt;
+@Table(name = "likes") // annotations to map to the corresponding database table "likes"
+public class Like { // Like: a class to represent when a user likes a post
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+
+	@ManyToOne // relationships with User
+	@JoinColumn(name = "user_id", nullable = false) // "user_id" is required field and cannot be null
+	private User user;
+
+	@ManyToOne // relationships with Post
+	@JoinColumn(name = "post_id", nullable = false) // "post_id" is required field and cannot be null
+	private Post post;
+
+	@Column(name = "created_at", nullable = false) // "created_at" is required field and cannot be null
+	private LocalDateTime createdAt;
 
 	public Long getId() {
 		return id;
@@ -61,6 +61,5 @@ public class Like {		   // Like: a class to represent when a user likes a post
 	public void setCreatedAt(LocalDateTime createdAt) {
 		this.createdAt = createdAt;
 	}
-    
-   
+
 }

@@ -12,26 +12,26 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "comments")  // annotations to map to the corresponding database table "comments"
-public class Comment {     // Comment: a class to represent comments made on posts
-    
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    
-    @Column(name = "content", nullable = false)   // "content" is required field and cannot be null
-    private String content;
-    
-    @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)  // "user_id" is required field and cannot be null
-    private User user;
-    
-    @ManyToOne
-    @JoinColumn(name = "post_id", nullable = false)  // "post_id" is required field and cannot be null
-    private Post post;
-    
-    @Column(name = "created_at", nullable = false)  // "created_at" is required field and cannot be null
-    private LocalDateTime createdAt;
+@Table(name = "comments") // annotations to map to the corresponding database table "comments"
+public class Comment { // Comment: a class to represent comments made on posts
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+
+	@Column(name = "content", nullable = false) // "content" is required field and cannot be null
+	private String content;
+
+	@ManyToOne
+	@JoinColumn(name = "user_id", nullable = false) // "user_id" is required field and cannot be null
+	private User user;
+
+	@ManyToOne
+	@JoinColumn(name = "post_id", nullable = false) // "post_id" is required field and cannot be null
+	private Post post;
+
+	@Column(name = "created_at", nullable = false) // "created_at" is required field and cannot be null
+	private LocalDateTime createdAt;
 
 	public Long getId() {
 		return id;
@@ -72,6 +72,5 @@ public class Comment {     // Comment: a class to represent comments made on pos
 	public void setCreatedAt(LocalDateTime createdAt) {
 		this.createdAt = createdAt;
 	}
-    
-   
+
 }

@@ -19,6 +19,6 @@ public interface UserService extends UserDetailsService {
 	List<User> findAll();
 
 	User findById(Long receiverId);
-	
-	
+
+	List<User> findAllExcept(User user);
 }

@@ -12,29 +12,27 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "messages")     // annotations to map to the corresponding database table "messages"
-public class Message {        // Message: a class to represent messages sent between users
+@Table(name = "messages") // annotations to map to the corresponding database table "messages"
+public class Message { // Message: a class to represent messages sent between users
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-    
-    @ManyToOne
-    @JoinColumn(name = "sender_id", nullable = false)
-    private User sender;
 
-    @ManyToOne
-    @JoinColumn(name = "receiver_id")
-    private User receiver;
+	@ManyToOne
+	@JoinColumn(name = "sender_id", nullable = false)
+	private User sender;
 
-    @Column(name = "created_at")
-    private LocalDateTime createdAt;
-	
-    @Column(name = "message", nullable = false)
+	@ManyToOne
+	@JoinColumn(name = "receiver_id")
+	private User receiver;
+
+	@Column(name = "created_at")
+	private LocalDateTime createdAt;
+
+	@Column(name = "message", nullable = false)
 	private String message;
 
-
-	
 	public Message(User sender, User receiver, String message) {
 		super();
 		this.sender = sender;
@@ -42,9 +40,9 @@ public class Message {        // Message: a class to represent messages sent bet
 		this.message = message;
 	}
 
-    // default constructor 
-	public Message() {}
-
+	// default constructor
+	public Message() {
+	}
 
 	public Long getId() {
 		return id;
@@ -86,5 +84,4 @@ public class Message {        // Message: a class to represent messages sent bet
 		this.message = message;
 	}
 
-    
 }

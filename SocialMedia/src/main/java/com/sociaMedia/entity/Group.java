@@ -17,7 +17,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "groups") // annotations to map to the corresponding database table "groups"
-public class Group {    // Group: a class to represent groups of users who have a shared interest
+public class Group { // Group: a class to represent groups of users who have a shared interest
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

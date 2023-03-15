@@ -63,54 +63,25 @@ public class MessageController {
 		messageRepository.save(newMessage);
 
 		model.addAttribute("success", true);
-		return new RedirectView("/messages"); // redirect to the messages page after creating the message
+		return new RedirectView("/messages?receiverId=" + receiver.getId()); // redirect to the messages page after creating the message
 	}
 
-	
-
 	@GetMapping("/{receiverId}")
-	public String getChat(@PathVariable Long receiverId, @AuthenticationPrincipal UserDetails userDetails, Model model) {
+	public String getChat(@PathVariable Long receiverId, @AuthenticationPrincipal UserDetails userDetails,
+			Model model) {
 		// get the currently authenticated user
 		User sender = userService.findByEmail(userDetails.getUsername());
 
 		// get the receiver
 		User receiver = userService.findById(receiverId);
-		
-	    List<Message> messages = messageRepository.findBySenderAndReceiver(sender, receiver);
-	    model.addAttribute("sender", sender);
-	    model.addAttribute("receiver", receiver);
-	    model.addAttribute("messages", messages);
 
-	    return "messages";
+		List<Message> messages = messageRepository.findBySenderAndReceiver(sender, receiver);
+		model.addAttribute("sender", sender);
+		model.addAttribute("receiver", receiver);
+		model.addAttribute("messages", messages);
+
+		return "messages";
 	}
-
-	
-    @GetMapping("/{senderId}/{receiverId}")
-    public ResponseEntity<List<Message>> getMessagesBySenderAndReceiver(@PathVariable Long senderId, @PathVariable Long receiverId) {
-        User sender = userService.getUserById(senderId);
-        User receiver = userService.getUserById(receiverId);
-
-        if (sender == null || receiver == null) {
-            return ResponseEntity.badRequest().body(null);
-        }
-
-        List<Message> messages = messageService.getMessagesBySenderAndReceiver(sender, receiver);
-
-        return ResponseEntity.ok(messages);
-    }
-
-//    @GetMapping("/{userId}")
-//    public ResponseEntity<List<Message>> getMessagesBySenderOrReceiver(@PathVariable Long userId) {
-//        User user = userService.getUserById(userId);
-//
-//        if (user == null) {
-//            return ResponseEntity.badRequest().body(null);
-//        }
-//
-//        List<Message> messages = messageService.getMessagesBySenderOrReceiver(user);
-//
-//        return ResponseEntity.ok(messages);
-//    }
 
 	@DeleteMapping("/{messageId}")
 	public ResponseEntity<?> deleteMessage(@PathVariable Long messageId) {
@@ -124,12 +95,5 @@ public class MessageController {
 
 		return ResponseEntity.ok("Message deleted successfully");
 	}
-
-//	@GetMapping("/messages")
-//	public String getMessages(Model model) {
-//		List<User> users = userRepository.findAll();
-//		model.addAttribute("users", users);
-//		return "messages";
-//	}
 
 }
