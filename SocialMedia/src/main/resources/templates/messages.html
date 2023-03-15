@@ -24,8 +24,6 @@
 <link
 	href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
 	rel="stylesheet" id="bootstrap-css">
-<!-- <link rel="stylesheet" type="text/css" href="static/style.css">
- -->
 <script
 	src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script
@@ -66,23 +64,22 @@
 
 							<li th:class="${status?.index == 0 ? 'active' : ''}"
 								th:each="user : ${users}"
-								th:onclick="@{'sendMessage(' + ${user.id} + ')'}"
-								>
+								th:onclick="@{'sendMessage(' + ${user.id} + ')'}">
 
-<a th:href="@{/messages(receiverId=${user.id})}">
+								<a th:href="@{/messages(receiverId=${user.id})}">
 
-								<div class="d-flex bd-highlight">
-									<div class="img_cont">
-										<img th:src="${user.profilePicture}" alt=""
-											class="rounded-circle user_img"> <span
-											class="online_icon"></span>
+									<div class="d-flex bd-highlight">
+										<div class="img_cont">
+											<img th:src="${user.profilePicture}" alt=""
+												class="rounded-circle user_img"> <span
+												class="online_icon"></span>
+										</div>
+										<div class="user_info">
+											<span th:text="${user.firstName} + ' ' + ${user.lastName}"></span>
+											<p th:text="${user.firstName} + ' is online'"></p>
+										</div>
 									</div>
-									<div class="user_info">
-										<span th:text="${user.firstName} + ' ' + ${user.lastName}"></span>
-										<p th:text="${user.firstName} + ' is online'"></p>
-									</div>
-								</div> 								
-</a>
+							</a>
 
 							</li>
 							<li>
@@ -164,20 +161,6 @@
 					<div class="card-body msg_card_body">
 
 
-						<!-- for testing messages. need to be deleted-->
-						<!--  					<ul class="list-unstyled">
-							<li th:each="message : ${messages}"
-							
-								th:class="${message.sender.id == user.id ? 'd-flex justify-content-end mb-4' : 'd-flex justify-content-start mb-4'}">
-								<div
-									th:class="${message.sender.id == user.id ? 'msg_cotainer_send' : 'msg_cotainer'}">
-									<span th:text="${message.message}"></span> 
-									<span th:text="${message.createdAt}"></span>
-								</div>
-							</li>
-						</ul>
- -->
-
 						<div class="d-flex justify-content-start mb-4"
 							th:each="message : ${messages}">
 							<div class="img_cont_msg">
@@ -187,14 +170,11 @@
 							</div>
 
 							<div class="msg_cotainer" th:text="${message.message}"
-								th:if="${message != null}">
-								
-							</div>
-								
+								th:if="${message != null}"></div>
+
 							<div class="msg_cotainer"
 								th:text="${#temporals.format(message.createdAt, 'dd-MM-yyyy HH:mm:ss')}"
-								th:if="${message != null}">
-							</div>
+								th:if="${message != null}"></div>
 						</div>
 						<!-- 						<div class="d-flex justify-content-end mb-4">
 							<div class="msg_cotainer_send">
@@ -210,17 +190,7 @@
 
 
 
-						<!-- 						<div class="d-flex justify-content-start mb-4">
-							<div class="img_cont_msg">
-								<img
-									src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
-									alt="" class="rounded-circle user_img_msg">
-							</div>
-							<div class="msg_cotainer">
-								I am good too, thank you for your KidzConnect social media web
-								site <span class="msg_time">9:00 AM, Today</span>
-							</div>
-						</div>
+						<!-- 		
 						<div class="d-flex justify-content-end mb-4">
 							<div class="msg_cotainer_send">
 								You are welcome <span class="msg_time_send">9:05 AM,
@@ -252,16 +222,6 @@
 									alt="" class="rounded-circle user_img_msg">
 							</div>
 						</div>
-						<div class="d-flex justify-content-start mb-4">
-							<div class="img_cont_msg">
-								<img
-									src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
-									alt="" class="rounded-circle user_img_msg">
-							</div>
-							<div class="msg_cotainer">
-								Bye, see you <span class="msg_time">9:12 AM, Today</span>
-							</div>
-						</div>
  -->
 					</div>
 					<div class="card-footer">
@@ -276,7 +236,7 @@
 								<textarea name="message" class="form-control type_msg"
 									placeholder="Type your message..."></textarea>
 
-								<input type="hidden" name="receiverId" th:value="${receiver.Id}"/>
+								<input type="hidden" name="receiverId" th:value="${receiver.Id}" />
 
 								<div class="input-group-append">
 
@@ -563,6 +523,7 @@ body, html {
 }
 </style>
 
+
 	<script src="messages.js"></script>
 
 	<script>
@@ -575,13 +536,6 @@ body, html {
 
       // Add active class to the clicked contact
       contact.classList.add('active');
-      
-      // Set receiverId input value to the id of the clicked user
-     // receiverIdInput.value = contact.getAttribute('data-user-id');
-
-      // Reload page to show messages between the two users
-      // location.reload();
-
     });
   });
 </script>
@@ -590,7 +544,6 @@ body, html {
 	<script>
     function sendMessage(userId) {
         document.querySelector('input[name="receiverId"]').value = userId;
-        // getChat(userId);
     }
 </script>
 

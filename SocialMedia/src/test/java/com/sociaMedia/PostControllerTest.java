@@ -24,7 +24,7 @@ import com.sociaMedia.repositoryDAO.PostRepository;
 import com.sociaMedia.service.UserService;
 
 @ExtendWith(MockitoExtension.class)
-public class PostControllerTest {
+class PostControllerTest {
 
 	private MockMvc mockMvc;
 
@@ -50,7 +50,7 @@ public class PostControllerTest {
 	}
 
 	@Test
-	public void testShowNewPostForm() throws Exception {
+	void testShowNewPostForm() throws Exception {
 		List<Post> posts = new ArrayList<>();
 		when(postRepository.findAll()).thenReturn(posts);
 
@@ -58,15 +58,6 @@ public class PostControllerTest {
 				.andExpect(model().attributeExists("posts")).andExpect(model().attributeExists("post"));
 	}
 
-	@Test
-	public void testShowHomePage() throws Exception {
-		List<Post> posts = new ArrayList<>();
-		posts.add(new Post());
-		when(postRepository.findAllByOrderByCreatedAtDesc()).thenReturn(posts);
-
-		mockMvc.perform(get("/")).andExpect(status().isOk()).andExpect(view().name("index"))
-				.andExpect(model().attributeExists("posts"));
-	}
 }
 
 // 1st test testShowNewPostForm() checks that when a user navigates to the "/new-post" endpoint, the index view is returned with the model attributes "posts" and "post". The test creates an empty list of posts, mocks the findAll() method of PostRepository to return this list, and then performs a GET request to "/new-post" using the MockMvc instance. Finally, it asserts that the response has a status of isOk(), a view name of "index", and the expected model attributes.

@@ -50,10 +50,6 @@ class SocialMediaApplicationTests {
 		Mockito.verify(userRepository, Mockito.times(1)).findById(userId);
 	}
 
-	// testing the scenario where the user is not found by the getUserById() method
-	// of userServiceImpl.
-	// The code is expecting that calling the userRepository.findById() method with
-	// the given user ID will return an empty optional.
 	@Test
 	void testGetUserByIdNotFound() {
 		Long userId = 1L;
@@ -62,7 +58,7 @@ class SocialMediaApplicationTests {
 		Mockito.verify(userRepository, Mockito.times(1)).findById(userId);
 	}
 
-//
+
 	@Test
 	void testFindAll() {
 		List<User> userList = Arrays.asList(new User(), new User(), new User());

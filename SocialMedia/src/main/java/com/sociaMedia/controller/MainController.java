@@ -6,7 +6,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 //import com.sociaMedia.entity.User;
@@ -45,15 +44,6 @@ public class MainController {
 		return "index";
 	}
 
-//	@GetMapping("/messages")
-//	public String viewMessages(@AuthenticationPrincipal UserDetails userDetails, Model model) {
-//		User sender = userService.findByEmail(userDetails.getUsername());
-//		List<User> users = userService.findAllExcept(sender);
-//		List<Message> messages = messageService.getAllMessages();
-//		model.addAttribute("messages", messages);
-//		model.addAttribute("users", users);
-//		return "messages";
-//	}
 
 	// for testing messages, might need to be deleted
 	@GetMapping("/messages")
@@ -68,8 +58,6 @@ public class MainController {
 	        model.addAttribute("messages", messages);
 	        model.addAttribute("receiver", receiver);
 	    } else {
-	        // If receiverId is null, get messages between the sender and the first user in the list
-//	        List<Message> messages = messageService.getAllMessages();
 	        model.addAttribute("messages", new ArrayList<Message>());
 	    }
 
@@ -81,12 +69,12 @@ public class MainController {
 		return "login";
 	}
 
-	@RequestMapping("/about")
+	@GetMapping("/about")
 	public String aboutPage() {
 		return "about";
 	}
 
-	@RequestMapping("/contact")
+	@GetMapping("/contact")
 	public String contactPage() {
 		return "contact";
 	}

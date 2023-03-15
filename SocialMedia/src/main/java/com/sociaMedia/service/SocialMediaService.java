@@ -9,15 +9,11 @@ import jakarta.persistence.Persistence;
 import jakarta.persistence.TypedQuery;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
 import com.sociaMedia.entity.Comment;
 import com.sociaMedia.entity.Friend;
 import com.sociaMedia.entity.Group;
 import com.sociaMedia.entity.Like;
 import com.sociaMedia.entity.Message;
-import com.sociaMedia.entity.Post;
 import com.sociaMedia.entity.User;
 import com.sociaMedia.repositoryDAO.*;
 
