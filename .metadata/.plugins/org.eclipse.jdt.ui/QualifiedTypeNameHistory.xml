@@ -7,10 +7,8 @@
     <fullyQualifiedTypeName name="org.springframework.data.rest.core.annotation.RepositoryRestResource"/>
     <fullyQualifiedTypeName name="repositoryDAO.UserRepository"/>
     <fullyQualifiedTypeName name="entity.User"/>
-    <fullyQualifiedTypeName name="com.sociaMedia.constraint.FieldMatch"/>
     <fullyQualifiedTypeName name="com.sociaMedia.repositoryDAO.PostRepository"/>
     <fullyQualifiedTypeName name="org.hibernate.mapping.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="org.springframework.security.core.context.SecurityContextHolder"/>
     <fullyQualifiedTypeName name="org.springframework.security.core.annotation.AuthenticationPrincipal"/>
     <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UserDetails"/>
@@ -34,7 +32,6 @@
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="org.springframework.data.jdbc.repository.query.Query"/>
     <fullyQualifiedTypeName name="com.sociaMedia.repositoryDAO.MessageRepository"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
     <fullyQualifiedTypeName name="java.security.Principal"/>
     <fullyQualifiedTypeName name="org.springframework.security.core.Authentication"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.view.RedirectView"/>
@@ -52,7 +49,6 @@
     <fullyQualifiedTypeName name="com.sociaMedia.repositoryDAO.UserRepository"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeEach"/>
     <fullyQualifiedTypeName name="com.sociaMedia.dto.UserRegistrationDto"/>
-    <fullyQualifiedTypeName name="com.sociaMedia.entity.User"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="com.sociaMedia.entity.Role"/>
     <fullyQualifiedTypeName name="org.mockito.Mockito"/>
@@ -60,4 +56,8 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UsernameNotFoundException"/>
     <fullyQualifiedTypeName name="com.sociaMedia.controller.PostController"/>
+    <fullyQualifiedTypeName name="com.sociaMedia.constraint.FieldMatch"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+    <fullyQualifiedTypeName name="com.sociaMedia.entity.User"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

@@ -6,23 +6,18 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="junit"/>
+		<item key="selection" value="th:if"/>
 		<list key="findhistory">
-			<item value="junit"/>
-			<item value="mockito-core"/>
-			<item value="MockMvcBuilders"/>
-			<item value="PasswordEncoder"/>
-			<item value="jquery-3.3.1.js&quot;"/>
-			<item value="/css&quot; href=&quot;style.css&quot;&gt;"/>
+			<item value="th:if"/>
+			<item value="Chat with"/>
+			<item value="        for (Message message : messages) {"/>
 			<item value="style.css"/>
-			<item value="atic/email-decode.min.js&quot;&gt;"/>
-			<item value="3.3.7/js/bootstrap.min.js"/>
-			<item value="/3.2.1/jquery.min.js/"/>
-			<item value="&lt;script type=&quot;text/javascript"/>
-			<item value="&lt;script data-cfasync=&quot;false"/>
-			<item value="font-awesome.min.css&quot;"/>
-			<item value="&lt;script src=&quot;https://netdna.boot"/>
-			<item value=" &lt;script src=&quot;https://code.jquery.com/jquery"/>
+			<item value="sryle.css"/>
+			<item value="class=&quot;nav-item&quot;"/>
+			<item value="/messages(recei"/>
+			<item value="th:href=&quot;@{/messages"/>
+			<item value="getMessagesBySenderAndReceiver"/>
+			<item value="&lt;div class=&quot;card-body msg_card_bod"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>
